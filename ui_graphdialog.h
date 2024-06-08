@@ -19,6 +19,7 @@
 #include <QtWidgets/QHeaderView>
 #include <QtWidgets/QLabel>
 #include "mycombobox.h"
+#include <QMainWindow>
 
 QT_BEGIN_NAMESPACE
 
@@ -30,6 +31,7 @@ public:
     QLabel *label;
     QLabel *label_2;
     MultiSelectComboBox *MSCB;
+    QMainWindow *window;
 
     void setupUi(QDialog *GraphDialog)
     {

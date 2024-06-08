@@ -22,7 +22,7 @@ MainWindow::~MainWindow()
 void MainWindow::Excel_Build(){
     qDebug()<<"ShowExcel";
 
-    GraphDialog *ed=new GraphDialog;
+    ExcelDialog *ed=new ExcelDialog;
     ed->show();
 }
 

@@ -31,6 +31,7 @@ SOURCES += \
         mainwindow.cpp \
     country.cpp \
     mycombobox.cpp \
+    polycurve.cpp \
     predictdialog.cpp
 
 HEADERS += \
@@ -39,6 +40,7 @@ HEADERS += \
         mainwindow.h \
     country.h \
     mycombobox.h \
+    polycurve.h \
     predictdialog.h
 
 FORMS += \

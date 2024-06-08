@@ -18,6 +18,7 @@
 #include <QtWidgets/QDialogButtonBox>
 #include <QtWidgets/QHeaderView>
 #include <QtWidgets/QLabel>
+#include <QMainWindow>
 
 QT_BEGIN_NAMESPACE
 
@@ -27,6 +28,7 @@ public:
     QDialogButtonBox *buttonBox;
     QComboBox *CountryBox;
     QLabel *CountryLabel;
+    QMainWindow *window;
 
     void setupUi(QDialog *ExcelDialog)
     {
