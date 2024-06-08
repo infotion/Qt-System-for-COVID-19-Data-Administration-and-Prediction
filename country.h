@@ -19,8 +19,6 @@ private:
     int data_month[10];
 
 protected:
-    const string PATH="D:\\1111111111111111111\\CSU\\0000\\system\\System\\data\\";
-    int to_number(string);
 
 public:
     Country();
@@ -30,11 +28,13 @@ public:
     int calc_month(int,int);
 
     QString Item(int,int);
+    static int to_number(string);
 
     static QString NAME[30];
     static map<QString,int> cindex;
     static int COLUMN;
     static int ROW;
+    static string PATH;
 };
 
 #endif // COUNTRY_H

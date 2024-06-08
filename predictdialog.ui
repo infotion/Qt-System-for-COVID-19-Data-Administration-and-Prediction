@@ -346,27 +346,12 @@
    </item>
    <item>
     <property name="text">
-     <string>新增确诊病例</string>
-    </property>
-   </item>
-   <item>
-    <property name="text">
      <string>康复病例</string>
     </property>
    </item>
    <item>
     <property name="text">
-     <string>新增康复病例</string>
-    </property>
-   </item>
-   <item>
-    <property name="text">
      <string>死亡病例</string>
-    </property>
-   </item>
-   <item>
-    <property name="text">
-     <string>新增死亡病例</string>
     </property>
    </item>
   </widget>

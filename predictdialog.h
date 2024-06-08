@@ -5,6 +5,7 @@
 #include "country.h"
 #include <QtCharts>
 #include <cmath>
+#include "polycurve.h"
 
 namespace Ui {
 class PredictDialog;
@@ -23,6 +24,7 @@ private:
     static char MONTH[12][4];
 private slots:
     void Calc();
+    void screenshot();
 };
 
 #endif // PREDICTDIALOG_H

@@ -18,6 +18,7 @@
 #include <QtWidgets/QDialogButtonBox>
 #include <QtWidgets/QHeaderView>
 #include <QtWidgets/QLabel>
+#include <QMainWindow>
 
 QT_BEGIN_NAMESPACE
 
@@ -35,6 +36,7 @@ public:
     QComboBox *CountryBox;
     QLabel *label_3;
     QComboBox *comboBox;
+    QMainWindow *window;
 
     void setupUi(QDialog *PredictDialog)
     {
@@ -153,11 +155,8 @@ public:
         comboBox->clear();
         comboBox->insertItems(0, QStringList()
          << QApplication::translate("PredictDialog", "\347\241\256\350\257\212\347\227\205\344\276\213", Q_NULLPTR)
-         << QApplication::translate("PredictDialog", "\346\226\260\345\242\236\347\241\256\350\257\212\347\227\205\344\276\213", Q_NULLPTR)
          << QApplication::translate("PredictDialog", "\345\272\267\345\244\215\347\227\205\344\276\213", Q_NULLPTR)
-         << QApplication::translate("PredictDialog", "\346\226\260\345\242\236\345\272\267\345\244\215\347\227\205\344\276\213", Q_NULLPTR)
          << QApplication::translate("PredictDialog", "\346\255\273\344\272\241\347\227\205\344\276\213", Q_NULLPTR)
-         << QApplication::translate("PredictDialog", "\346\226\260\345\242\236\346\255\273\344\272\241\347\227\205\344\276\213", Q_NULLPTR)
         );
     } // retranslateUi
 

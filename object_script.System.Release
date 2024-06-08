@@ -5,6 +5,7 @@ INPUT(
 ./release\mainwindow.o
 ./release\country.o
 ./release\mycombobox.o
+./release\polycurve.o
 ./release\predictdialog.o
 ./release\moc_exceldialog.o
 ./release\moc_graphdialog.o

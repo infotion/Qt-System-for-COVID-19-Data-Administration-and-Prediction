@@ -9,6 +9,7 @@ map<QString,int> Country::cindex={{"世界",0},{"中国",1},{"日本",2},{"韩�
 
 int Country::COLUMN=12;
 int Country::ROW=170;
+string Country::PATH="D:\\1111111111111111111\\CSU\\0000\\system\\System\\data\\";
 
 QString Country::Item(int r,int c){
     return QString::fromStdString(item[r*COLUMN+c]);

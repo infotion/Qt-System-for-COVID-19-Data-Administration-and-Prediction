@@ -8,7 +8,6 @@
 #include <QtCharts>
 #include <QBarSet>
 #include "country.h"
-//using namespace QtCharts;
 
 namespace Ui {
 class GraphDialog;
@@ -27,6 +26,7 @@ private:
 
 private slots:
     void build();
+    void screenshot();
 };
 
 #endif // GRAPHDIALOG_H

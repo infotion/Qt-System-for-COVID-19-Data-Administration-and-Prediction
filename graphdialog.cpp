@@ -47,7 +47,16 @@ void GraphDialog::build(){
 
         for(int i=1;i<=6;i++){
             int res=st->calc_month(i,col);
-            *data<<res;
+
+//            QString str;
+//            QTextStream s(&str);
+//            s.setRealNumberNotation(QTextStream::FixedNotation); /* 使用固定模式 */
+//            s.setRealNumberPrecision(0); /* 保留0位小数 */
+//            s << res;
+
+////            qDebug() << str;
+
+            data->append(res);
             MAXY=max(MAXY,res);
         }
 
@@ -117,14 +126,38 @@ void GraphDialog::build(){
     QChartView *chartView = new QChartView(chart);
     chartView->setRenderHint(QPainter::Antialiasing);
 
-
 //![6]
 
 //![7]
-    QMainWindow *window=new QMainWindow;
-    window->setCentralWidget(chartView);
-    window->setWindowTitle("柱状图可视化界面");
-    window->setFont(font);
-    window->resize(1600, 900);
-    window->show();
+    ui->window=new QMainWindow;
+    ui->window->setCentralWidget(chartView);
+    ui->window->setWindowTitle("柱状图可视化界面");
+    ui->window->setFont(font);
+    ui->window->resize(1600, 900);
+
+    QToolBar *tb=new QToolBar("工具栏",ui->window);
+    QAction *action_S=new QAction(tr("保存图片(&S)"),ui->window);
+    tb->addAction(action_S);
+    connect(action_S,&QAction::triggered,this,&GraphDialog::screenshot);
+    ui->window->addToolBar(tb);
+
+    ui->window->show();
+}
+
+void GraphDialog::screenshot(){
+    QPixmap pixMap_ = QPixmap::grabWidget(ui->window->centralWidget());
+    QDateTime t=QDateTime::currentDateTime();
+    QString time=t.toString("yyyy-MM-dd hh-mm-ss");
+    QString name=time+".png";
+    qDebug()<<"./png/"+name;
+    pixMap_.save("./png/"+name);
+
+    QDialog *as=new QDialog;
+    QVBoxLayout *vbox = new QVBoxLayout(this);
+    vbox->addWidget(new QLabel("图片已保存至D:\\1111111111111111111\\CSU\\0000\\system\\System\\png\\"+name));
+    QDialogButtonBox *b=new QDialogButtonBox(QDialogButtonBox::Ok);
+    vbox->addWidget(b);
+    as->setLayout(vbox);
+    as->show();
+    connect(b,SIGNAL(accepted()),as,SLOT(accept()));
 }

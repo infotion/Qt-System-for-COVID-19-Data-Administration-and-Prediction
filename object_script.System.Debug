@@ -5,6 +5,7 @@ INPUT(
 ./debug\mainwindow.o
 ./debug\country.o
 ./debug\mycombobox.o
+./debug\polycurve.o
 ./debug\predictdialog.o
 ./debug\moc_exceldialog.o
 ./debug\moc_graphdialog.o
