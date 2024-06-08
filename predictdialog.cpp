@@ -217,7 +217,7 @@ void PredictDialog::Calc(){
 
         for(int i=T+1;i<=T+D;i++){
             qDebug()<<tmp[i];
-            *data_p<<(long long)(tmp[i]);
+            *data_p<<(long long)tmp[i];
             MAXY=max(MAXY,tmp[i]);
         }
 

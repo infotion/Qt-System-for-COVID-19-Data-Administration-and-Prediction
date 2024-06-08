@@ -47,15 +47,6 @@ void GraphDialog::build(){
 
         for(int i=1;i<=6;i++){
             int res=st->calc_month(i,col);
-
-//            QString str;
-//            QTextStream s(&str);
-//            s.setRealNumberNotation(QTextStream::FixedNotation); /* 使用固定模式 */
-//            s.setRealNumberPrecision(0); /* 保留0位小数 */
-//            s << res;
-
-////            qDebug() << str;
-
             data->append(res);
             MAXY=max(MAXY,res);
         }
@@ -66,20 +57,6 @@ void GraphDialog::build(){
         cset->append(data);
     }
 
-
-
-//    QBarSet *set0 = new QBarSet("Mhx");
-//    QBarSet *set1 = new QBarSet("Feb");
-//    QBarSet *set2 = new QBarSet("Mar");
-//    QBarSet *set3 = new QBarSet("Apr");
-//    QBarSet *set4 = new QBarSet("May");
-//    QBarSet *set5 = new QBarSet("Jun");
-
-//    *set0 << 1 << 2 << 3 << 4 << 5 << 6;// Jane 6个月份的值
-//    *set1 << 5 << 0 << 0 << 4 << 0 << 7;
-//    *set2 << 3 << 5 << 8 << 19<< 8 << 5;
-//    *set3 << 5 << 6 << 7 << 3 << 4 << 5;
-//    *set4 << 9 << 7 << 5 << 3 << 1 << 2;
 //![1]
 
 //![2]

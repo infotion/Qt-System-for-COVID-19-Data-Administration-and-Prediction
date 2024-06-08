@@ -97,8 +97,6 @@ int Country::calc_month(int idx,int col){
                 case 1:case 3:case 8:res=to_number(item[i+col]);break;
                 case 2:case 4:case 9: res+=to_number(item[i+col]);break;
             }
-
-//            cerr<<item[i+7]<<" "<<to_number(item[i+col])<<endl;
         }
     }
 
