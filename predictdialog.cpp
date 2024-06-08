@@ -177,7 +177,7 @@ void PredictDialog::Calc(){
     for(int i=S;i<=T;i++)
         R4+=1.0/N*(Y4[i]-Y[i])*(Y4[i]-Y[i]);
 //[SP]
-    if(idx==1 or col==4) R3=R4=R0+R1+R2;
+    if(idx) R3=R4=R0+R1+R2;
 
     qDebug()<<"ShowGraph";
 

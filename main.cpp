@@ -7,7 +7,5 @@ int main(int argc, char *argv[])
     MainWindow w;
     w.show();
 
-//    cerr<<log(2.718281828)<<endl;
-
     return a.exec();
 }
