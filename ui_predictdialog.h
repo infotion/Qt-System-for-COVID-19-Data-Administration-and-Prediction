@@ -33,6 +33,8 @@ public:
     QComboBox *EndMonthBox;
     QLabel *CountryLabel;
     QComboBox *CountryBox;
+    QLabel *label_3;
+    QComboBox *comboBox;
 
     void setupUi(QDialog *PredictDialog)
     {
@@ -73,10 +75,16 @@ public:
         EndMonthBox->setEditable(false);
         CountryLabel = new QLabel(PredictDialog);
         CountryLabel->setObjectName(QStringLiteral("CountryLabel"));
-        CountryLabel->setGeometry(QRect(130, 40, 141, 20));
+        CountryLabel->setGeometry(QRect(40, 40, 141, 20));
         CountryBox = new QComboBox(PredictDialog);
         CountryBox->setObjectName(QStringLiteral("CountryBox"));
-        CountryBox->setGeometry(QRect(130, 70, 141, 31));
+        CountryBox->setGeometry(QRect(40, 70, 141, 31));
+        label_3 = new QLabel(PredictDialog);
+        label_3->setObjectName(QStringLiteral("label_3"));
+        label_3->setGeometry(QRect(190, 40, 171, 20));
+        comboBox = new QComboBox(PredictDialog);
+        comboBox->setObjectName(QStringLiteral("comboBox"));
+        comboBox->setGeometry(QRect(190, 70, 161, 31));
 
         retranslateUi(PredictDialog);
         QObject::connect(buttonBox, SIGNAL(accepted()), PredictDialog, SLOT(accept()));
@@ -105,24 +113,22 @@ public:
         label_4->setText(QApplication::translate("PredictDialog", "\351\242\204\346\265\213\351\225\277\345\272\246", Q_NULLPTR));
         StartMonthBox->clear();
         StartMonthBox->insertItems(0, QStringList()
-         << QApplication::translate("PredictDialog", "1\346\234\210", Q_NULLPTR)
          << QApplication::translate("PredictDialog", "2\346\234\210", Q_NULLPTR)
          << QApplication::translate("PredictDialog", "3\346\234\210", Q_NULLPTR)
          << QApplication::translate("PredictDialog", "4\346\234\210", Q_NULLPTR)
          << QApplication::translate("PredictDialog", "5\346\234\210", Q_NULLPTR)
          << QApplication::translate("PredictDialog", "6\346\234\210", Q_NULLPTR)
         );
-        StartMonthBox->setCurrentText(QApplication::translate("PredictDialog", "1\346\234\210", Q_NULLPTR));
+        StartMonthBox->setCurrentText(QApplication::translate("PredictDialog", "2\346\234\210", Q_NULLPTR));
         EndMonthBox->clear();
         EndMonthBox->insertItems(0, QStringList()
-         << QApplication::translate("PredictDialog", "1\346\234\210", Q_NULLPTR)
          << QApplication::translate("PredictDialog", "2\346\234\210", Q_NULLPTR)
          << QApplication::translate("PredictDialog", "3\346\234\210", Q_NULLPTR)
          << QApplication::translate("PredictDialog", "4\346\234\210", Q_NULLPTR)
          << QApplication::translate("PredictDialog", "5\346\234\210", Q_NULLPTR)
          << QApplication::translate("PredictDialog", "6\346\234\210", Q_NULLPTR)
         );
-        EndMonthBox->setCurrentText(QApplication::translate("PredictDialog", "1\346\234\210", Q_NULLPTR));
+        EndMonthBox->setCurrentText(QApplication::translate("PredictDialog", "2\346\234\210", Q_NULLPTR));
         CountryLabel->setText(QApplication::translate("PredictDialog", "\351\200\211\346\213\251\351\234\200\350\246\201\346\237\245\350\257\242\347\232\204\345\233\275\345\256\266", Q_NULLPTR));
         CountryBox->clear();
         CountryBox->insertItems(0, QStringList()
@@ -142,6 +148,16 @@ public:
          << QApplication::translate("PredictDialog", "\350\217\262\345\276\213\345\256\276", Q_NULLPTR)
          << QApplication::translate("PredictDialog", "\346\276\263\345\244\247\345\210\251\344\272\232", Q_NULLPTR)
          << QApplication::translate("PredictDialog", "\346\226\260\350\245\277\345\205\260", Q_NULLPTR)
+        );
+        label_3->setText(QApplication::translate("PredictDialog", "\350\276\223\345\205\245\351\234\200\350\246\201\345\217\257\350\247\206\345\214\226\347\232\204\351\241\271\347\233\256", Q_NULLPTR));
+        comboBox->clear();
+        comboBox->insertItems(0, QStringList()
+         << QApplication::translate("PredictDialog", "\347\241\256\350\257\212\347\227\205\344\276\213", Q_NULLPTR)
+         << QApplication::translate("PredictDialog", "\346\226\260\345\242\236\347\241\256\350\257\212\347\227\205\344\276\213", Q_NULLPTR)
+         << QApplication::translate("PredictDialog", "\345\272\267\345\244\215\347\227\205\344\276\213", Q_NULLPTR)
+         << QApplication::translate("PredictDialog", "\346\226\260\345\242\236\345\272\267\345\244\215\347\227\205\344\276\213", Q_NULLPTR)
+         << QApplication::translate("PredictDialog", "\346\255\273\344\272\241\347\227\205\344\276\213", Q_NULLPTR)
+         << QApplication::translate("PredictDialog", "\346\226\260\345\242\236\346\255\273\344\272\241\347\227\205\344\276\213", Q_NULLPTR)
         );
     } // retranslateUi
 
