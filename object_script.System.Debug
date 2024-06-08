@@ -1,0 +1,14 @@
+INPUT(
+./debug\exceldialog.o
+./debug\graphdialog.o
+./debug\main.o
+./debug\mainwindow.o
+./debug\country.o
+./debug\mycombobox.o
+./debug\predictdialog.o
+./debug\moc_exceldialog.o
+./debug\moc_graphdialog.o
+./debug\moc_mainwindow.o
+./debug\moc_mycombobox.o
+./debug\moc_predictdialog.o
+);
