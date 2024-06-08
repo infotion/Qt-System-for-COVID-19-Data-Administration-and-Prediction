@@ -34,18 +34,18 @@ public:
     {
         if (ExcelDialog->objectName().isEmpty())
             ExcelDialog->setObjectName(QStringLiteral("ExcelDialog"));
-        ExcelDialog->resize(400, 300);
+        ExcelDialog->resize(314, 215);
         buttonBox = new QDialogButtonBox(ExcelDialog);
         buttonBox->setObjectName(QStringLiteral("buttonBox"));
-        buttonBox->setGeometry(QRect(30, 240, 341, 32));
+        buttonBox->setGeometry(QRect(-90, 150, 341, 32));
         buttonBox->setOrientation(Qt::Horizontal);
         buttonBox->setStandardButtons(QDialogButtonBox::Cancel|QDialogButtonBox::Ok);
         CountryBox = new QComboBox(ExcelDialog);
         CountryBox->setObjectName(QStringLiteral("CountryBox"));
-        CountryBox->setGeometry(QRect(120, 140, 141, 31));
+        CountryBox->setGeometry(QRect(80, 80, 141, 31));
         CountryLabel = new QLabel(ExcelDialog);
         CountryLabel->setObjectName(QStringLiteral("CountryLabel"));
-        CountryLabel->setGeometry(QRect(120, 110, 141, 20));
+        CountryLabel->setGeometry(QRect(80, 50, 141, 20));
 
         retranslateUi(ExcelDialog);
         QObject::connect(buttonBox, SIGNAL(accepted()), ExcelDialog, SLOT(accept()));
@@ -56,7 +56,7 @@ public:
 
     void retranslateUi(QDialog *ExcelDialog)
     {
-        ExcelDialog->setWindowTitle(QApplication::translate("ExcelDialog", "Dialog", Q_NULLPTR));
+        ExcelDialog->setWindowTitle(QApplication::translate("ExcelDialog", "ExcelDialog", Q_NULLPTR));
         CountryBox->clear();
         CountryBox->insertItems(0, QStringList()
          << QApplication::translate("ExcelDialog", "\344\270\226\347\225\214", Q_NULLPTR)

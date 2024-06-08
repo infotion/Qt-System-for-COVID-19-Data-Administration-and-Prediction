@@ -100,7 +100,7 @@ $(DESTDIR_TARGET): ui_exceldialog.h ui_graphdialog.h ui_mainwindow.h ui_predictd
 	$(LINKER) $(LFLAGS) -o $(DESTDIR_TARGET) object_script.System.Debug  $(LIBS)
 
 qmake: FORCE
-	@$(QMAKE) -o Makefile.Debug System.pro -spec win32-g++ "CONFIG+=debug"
+	@$(QMAKE) -o Makefile.Debug System.pro -spec win32-g++
 
 qmake_all: FORCE
 
@@ -1373,6 +1373,7 @@ debug/moc_mainwindow.cpp: D:/Documents/Qt/5.9/mingw53_32/include/QtWidgets/QMain
 		D:/Documents/Qt/5.9/mingw53_32/include/QtCharts/qxylegendmarker.h \
 		D:/Documents/Qt/5.9/mingw53_32/include/QtCharts/qtchartsversion.h \
 		predictdialog.h \
+		polycurve.h \
 		mainwindow.h \
 		debug/moc_predefs.h \
 		D:/Documents/Qt/5.9/mingw53_32/bin/moc.exe
@@ -2055,6 +2056,7 @@ debug/moc_predictdialog.cpp: D:/Documents/Qt/5.9/mingw53_32/include/QtWidgets/QD
 		D:/Documents/Qt/5.9/mingw53_32/include/QtCharts/qvxymodelmapper.h \
 		D:/Documents/Qt/5.9/mingw53_32/include/QtCharts/qxylegendmarker.h \
 		D:/Documents/Qt/5.9/mingw53_32/include/QtCharts/qtchartsversion.h \
+		polycurve.h \
 		predictdialog.h \
 		debug/moc_predefs.h \
 		D:/Documents/Qt/5.9/mingw53_32/bin/moc.exe
@@ -2796,7 +2798,8 @@ debug/graphdialog.o: graphdialog.cpp graphdialog.h \
 		D:/Documents/Qt/5.9/mingw53_32/include/QtWidgets/QApplication \
 		D:/Documents/Qt/5.9/mingw53_32/include/QtWidgets/QButtonGroup \
 		D:/Documents/Qt/5.9/mingw53_32/include/QtWidgets/QDialogButtonBox \
-		D:/Documents/Qt/5.9/mingw53_32/include/QtWidgets/QHeaderView
+		D:/Documents/Qt/5.9/mingw53_32/include/QtWidgets/QHeaderView \
+		D:/Documents/Qt/5.9/mingw53_32/include/QtWidgets/QMainWindow
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o debug\graphdialog.o graphdialog.cpp
 
 debug/main.o: main.cpp mainwindow.h \
@@ -3353,6 +3356,7 @@ debug/main.o: main.cpp mainwindow.h \
 		D:/Documents/Qt/5.9/mingw53_32/include/QtCharts/qxylegendmarker.h \
 		D:/Documents/Qt/5.9/mingw53_32/include/QtCharts/qtchartsversion.h \
 		predictdialog.h \
+		polycurve.h \
 		D:/Documents/Qt/5.9/mingw53_32/include/QtWidgets/QApplication
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o debug\main.o main.cpp
 
@@ -3910,6 +3914,7 @@ debug/mainwindow.o: mainwindow.cpp mainwindow.h \
 		D:/Documents/Qt/5.9/mingw53_32/include/QtCharts/qxylegendmarker.h \
 		D:/Documents/Qt/5.9/mingw53_32/include/QtCharts/qtchartsversion.h \
 		predictdialog.h \
+		polycurve.h \
 		ui_mainwindow.h \
 		D:/Documents/Qt/5.9/mingw53_32/include/QtWidgets/QAction \
 		D:/Documents/Qt/5.9/mingw53_32/include/QtWidgets/QApplication \
@@ -4719,13 +4724,15 @@ debug/predictdialog.o: predictdialog.cpp predictdialog.h \
 		D:/Documents/Qt/5.9/mingw53_32/include/QtCharts/qvxymodelmapper.h \
 		D:/Documents/Qt/5.9/mingw53_32/include/QtCharts/qxylegendmarker.h \
 		D:/Documents/Qt/5.9/mingw53_32/include/QtCharts/qtchartsversion.h \
+		polycurve.h \
 		ui_predictdialog.h \
 		D:/Documents/Qt/5.9/mingw53_32/include/QtWidgets/QAction \
 		D:/Documents/Qt/5.9/mingw53_32/include/QtWidgets/QApplication \
 		D:/Documents/Qt/5.9/mingw53_32/include/QtWidgets/QButtonGroup \
 		D:/Documents/Qt/5.9/mingw53_32/include/QtWidgets/QDialogButtonBox \
 		D:/Documents/Qt/5.9/mingw53_32/include/QtWidgets/QHeaderView \
-		D:/Documents/Qt/5.9/mingw53_32/include/QtWidgets/QLabel
+		D:/Documents/Qt/5.9/mingw53_32/include/QtWidgets/QLabel \
+		D:/Documents/Qt/5.9/mingw53_32/include/QtWidgets/QMainWindow
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o debug\predictdialog.o predictdialog.cpp
 
 debug/moc_exceldialog.o: debug/moc_exceldialog.cpp 
