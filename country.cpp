@@ -49,8 +49,6 @@ void Country::read(QString text){
     string s=PATH;
     int idx=cindex[text];
 
-//    cerr<<idx<<endl;
-
     if(idx<10) s+=char(idx+'0');
     else{
         s+='1';
@@ -89,7 +87,7 @@ int Country::calc_month(int idx,int col){
         case 4:col=8;break;
         case 5:col=9;break;
     }
-    qDebug()<<col;
+//    qDebug()<<col;
 
     for(int i=0+COLUMN;i<item.size();i+=COLUMN){
         char c=item[i+7][5];//月份数字
@@ -99,7 +97,7 @@ int Country::calc_month(int idx,int col){
                 case 2:case 4:case 9: res+=to_number(item[i+col]);break;
             }
 
-            cerr<<item[i+7]<<" "<<to_number(item[i+col])<<endl;
+//            cerr<<item[i+7]<<" "<<to_number(item[i+col])<<endl;
         }
     }
 

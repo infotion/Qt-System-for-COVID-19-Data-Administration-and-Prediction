@@ -133,16 +133,11 @@
     <bool>false</bool>
    </property>
    <property name="currentText">
-    <string>1月</string>
+    <string>2月</string>
    </property>
    <property name="currentIndex">
     <number>0</number>
    </property>
-   <item>
-    <property name="text">
-     <string>1月</string>
-    </property>
-   </item>
    <item>
     <property name="text">
      <string>2月</string>
@@ -191,13 +186,8 @@
     <bool>false</bool>
    </property>
    <property name="currentText">
-    <string>1月</string>
+    <string>2月</string>
    </property>
-   <item>
-    <property name="text">
-     <string>1月</string>
-    </property>
-   </item>
    <item>
     <property name="text">
      <string>2月</string>
@@ -227,7 +217,7 @@
   <widget class="QLabel" name="CountryLabel">
    <property name="geometry">
     <rect>
-     <x>130</x>
+     <x>40</x>
      <y>40</y>
      <width>141</width>
      <height>20</height>
@@ -240,7 +230,7 @@
   <widget class="QComboBox" name="CountryBox">
    <property name="geometry">
     <rect>
-     <x>130</x>
+     <x>40</x>
      <y>70</y>
      <width>141</width>
      <height>31</height>
@@ -324,6 +314,59 @@
    <item>
     <property name="text">
      <string>新西兰</string>
+    </property>
+   </item>
+  </widget>
+  <widget class="QLabel" name="label_3">
+   <property name="geometry">
+    <rect>
+     <x>190</x>
+     <y>40</y>
+     <width>171</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>输入需要可视化的项目</string>
+   </property>
+  </widget>
+  <widget class="QComboBox" name="comboBox">
+   <property name="geometry">
+    <rect>
+     <x>190</x>
+     <y>70</y>
+     <width>161</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <item>
+    <property name="text">
+     <string>确诊病例</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>新增确诊病例</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>康复病例</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>新增康复病例</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>死亡病例</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>新增死亡病例</string>
     </property>
    </item>
   </widget>
