@@ -226,6 +226,7 @@ Makefile: System.pro D:/Documents/Qt/5.9/mingw53_32/mkspecs/win32-g++/qmake.conf
 		D:/Documents/Qt/5.9/mingw53_32/mkspecs/features/moc.prf \
 		D:/Documents/Qt/5.9/mingw53_32/mkspecs/features/win32/opengl.prf \
 		D:/Documents/Qt/5.9/mingw53_32/mkspecs/features/uic.prf \
+		D:/Documents/Qt/5.9/mingw53_32/mkspecs/features/win32/dumpcpp.prf \
 		D:/Documents/Qt/5.9/mingw53_32/mkspecs/features/qmake_use.prf \
 		D:/Documents/Qt/5.9/mingw53_32/mkspecs/features/file_copies.prf \
 		D:/Documents/Qt/5.9/mingw53_32/mkspecs/features/win32/windows.prf \
@@ -236,6 +237,8 @@ Makefile: System.pro D:/Documents/Qt/5.9/mingw53_32/mkspecs/win32-g++/qmake.conf
 		System.pro \
 		D:/Documents/Qt/5.9/mingw53_32/lib/qtmain.prl \
 		D:/Documents/Qt/5.9/mingw53_32/lib/Qt5Charts.prl \
+		D:/Documents/Qt/5.9/mingw53_32/lib/Qt5AxContainer.prl \
+		D:/Documents/Qt/5.9/mingw53_32/lib/Qt5AxBase.prl \
 		D:/Documents/Qt/5.9/mingw53_32/lib/Qt5Widgets.prl \
 		D:/Documents/Qt/5.9/mingw53_32/lib/Qt5Gui.prl \
 		D:/Documents/Qt/5.9/mingw53_32/lib/Qt5Core.prl
@@ -404,6 +407,7 @@ D:/Documents/Qt/5.9/mingw53_32/mkspecs/features/resources.prf:
 D:/Documents/Qt/5.9/mingw53_32/mkspecs/features/moc.prf:
 D:/Documents/Qt/5.9/mingw53_32/mkspecs/features/win32/opengl.prf:
 D:/Documents/Qt/5.9/mingw53_32/mkspecs/features/uic.prf:
+D:/Documents/Qt/5.9/mingw53_32/mkspecs/features/win32/dumpcpp.prf:
 D:/Documents/Qt/5.9/mingw53_32/mkspecs/features/qmake_use.prf:
 D:/Documents/Qt/5.9/mingw53_32/mkspecs/features/file_copies.prf:
 D:/Documents/Qt/5.9/mingw53_32/mkspecs/features/win32/windows.prf:
@@ -414,6 +418,8 @@ D:/Documents/Qt/5.9/mingw53_32/mkspecs/features/lex.prf:
 System.pro:
 D:/Documents/Qt/5.9/mingw53_32/lib/qtmain.prl:
 D:/Documents/Qt/5.9/mingw53_32/lib/Qt5Charts.prl:
+D:/Documents/Qt/5.9/mingw53_32/lib/Qt5AxContainer.prl:
+D:/Documents/Qt/5.9/mingw53_32/lib/Qt5AxBase.prl:
 D:/Documents/Qt/5.9/mingw53_32/lib/Qt5Widgets.prl:
 D:/Documents/Qt/5.9/mingw53_32/lib/Qt5Gui.prl:
 D:/Documents/Qt/5.9/mingw53_32/lib/Qt5Core.prl:

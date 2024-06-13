@@ -19,6 +19,7 @@
 #include <QtWidgets/QHeaderView>
 #include <QtWidgets/QLabel>
 #include <QMainWindow>
+#include <QTableWidget>
 
 QT_BEGIN_NAMESPACE
 

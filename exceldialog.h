@@ -5,6 +5,13 @@
 #include "country.h"
 #include <QTableWidget>
 #include <QMainWindow>
+#include <QToolBar>
+#include <QDesktopServices>
+#include <QUrl>
+#include <QAxObject>
+#include <QMessageBox>
+#include <QFileDialog>
+//#include <QFile>
 
 namespace Ui {
 class ExcelDialog;
@@ -20,9 +27,11 @@ public:
 
 private:
     Ui::ExcelDialog *ui;
+    QTableWidget *t;
 
 private slots:
     void build();
+    void save();
 };
 
 #endif // EXCELDIALOG_H
