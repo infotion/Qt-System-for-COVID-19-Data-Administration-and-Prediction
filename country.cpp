@@ -15,6 +15,9 @@ QString Country::Item(int r,int c){
     return QString::fromStdString(item[r*COLUMN+c]);
 }
 
+Country::~Country(){
+}
+
 void Country::read(int idx){
     string s=PATH;
 
@@ -32,7 +35,9 @@ void Country::read(int idx){
     vector<string> buf;
     while(getline(fin,tmp)) buf.push_back(tmp);
 
+//    vector<string> T;
     item.clear();
+//    item.shrink_to_fit();
     for(auto it=buf.begin();it!=buf.end();it++)
     {
         string tmp;
@@ -41,9 +46,12 @@ void Country::read(int idx){
         for(int i=0;i<COLUMN;i++)
         {
             getline(sfin, tmp, ',');
+//            if(!getline(sfin, tmp, ',')) break;
             item.push_back(tmp);
         }
     }
+
+
 }
 
 void Country::read(QString text){
@@ -65,6 +73,7 @@ void Country::read(QString text){
     while(getline(fin,tmp)) buf.push_back(tmp);
 
     item.clear();
+//    item.shrink_to_fit();
     for(auto it=buf.begin();it!=buf.end();it++)
     {
         string tmp;
@@ -104,9 +113,11 @@ int Country::calc_month(int idx,int col){
 }
 
 int Country::to_number(string s){
+    bool flag=(s[0]=='-');
     int res=0;
-    for(int i=0;i<s.size();i++){
+    for(int i=0+flag;i<s.size();i++){
         res=res*10+s[i]-'0';
     }
+    if(flag) res*=-1;
     return res;
 }

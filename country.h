@@ -22,6 +22,7 @@ protected:
 
 public:
     Country();
+    ~Country();
 
     void read(int);
     void read(QString);

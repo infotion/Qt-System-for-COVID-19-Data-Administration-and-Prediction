@@ -35,14 +35,25 @@ void PredictDialog::Calc(){
     }
 
     QComboBox *country=ui->CountryBox;
-
-    Country *st=new Country;
     int idx=country->currentIndex();
-    st->read(idx);
+
+//    if(idx==8 or idx==4 or idx==9)
+//    {
+//        QDialog *as=new QDialog;
+//        QVBoxLayout *vbox = new QVBoxLayout(this);
+//        vbox->addWidget(new QLabel(Country::NAME[idx]+"收集的疫情数据极少（远少于中国），不具有统计意义，还是看看其他国家（地区）吧"));
+//        QDialogButtonBox *b=new QDialogButtonBox(QDialogButtonBox::Ok);
+//        vbox->addWidget(b);
+//        as->setLayout(vbox);
+//        as->show();
+//        connect(b,SIGNAL(accepted()),as,SLOT(accept()));
+//        return;
+//    }
 
     int col=ui->comboBox->currentIndex()*2;
-
-    while(!st->calc_month(S,col)) S++;
+    Country *st=new Country;
+    st->read(ui->CountryBox->currentText());
+    while(S<=6 and !st->calc_month(S,col)) S++;
 
     if(S>=T){
         QDialog *as=new QDialog;
@@ -56,28 +67,19 @@ void PredictDialog::Calc(){
         return;
     }
 
-    if(idx==8 or idx==4)
-    {
-        QDialog *as=new QDialog;
-        QVBoxLayout *vbox = new QVBoxLayout(this);
-        vbox->addWidget(new QLabel(Country::NAME[idx]+"收集的疫情数据极少（远少于中国），不具有统计意义，还是看看其他国家（地区）吧"));
-        QDialogButtonBox *b=new QDialogButtonBox(QDialogButtonBox::Ok);
-        vbox->addWidget(b);
-        as->setLayout(vbox);
-        as->show();
-        connect(b,SIGNAL(accepted()),as,SLOT(accept()));
-        return;
-    }
+
 
     double X[20]={},N=T-S+1;
     double Y[20]={};
     double aX,aY,sY,sX,ssX;
 
+
     for(int i=S;i<=T;i++){
         X[i]=i;
         Y[i]=st->calc_month(i,col);
-    }
+        qDebug()<<Y[i];
 
+    }
 //[0]
     double B_0=0.0,A_0=0.0;
     double X0[20],Y0[20];
@@ -177,7 +179,13 @@ void PredictDialog::Calc(){
     for(int i=S;i<=T;i++)
         R4+=1.0/N*(Y4[i]-Y[i])*(Y4[i]-Y[i]);
 //[SP]
-    if(idx) R3=R4=R0+R1+R2;
+    bool flag=1;
+
+    for(int i=1;i<=D;i++)
+    {
+        if(Y3[T+i]<0 or Y4[T+i]<0 or Y3[T+i]<Y3[T+i-1] or Y4[T+i]<Y4[T+i-1]) flag=0;
+    }
+    if(!flag) R3=R4=R0+R1+R2;
 
     qDebug()<<"ShowGraph";
 

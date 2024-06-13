@@ -122,10 +122,15 @@ void GraphDialog::build(){
 }
 
 void GraphDialog::screenshot(){
-    QPixmap pixMap_ = QPixmap::grabWidget(ui->window->centralWidget());
+    qDebug()<<"SC OK";
     QDateTime t=QDateTime::currentDateTime();
     QString time=t.toString("yyyy-MM-dd hh-mm-ss");
     QString name=time+".png";
+//    QString fileName = QFileDialog::getSaveFileName(this,tr("PNG file"),QString(name+".jpg"),tr("JPG Files(*.jpg)"));    //设置保存的文件名
+
+    QPixmap pixMap_ = QPixmap::grabWidget(ui->window->centralWidget());
+
+
     qDebug()<<"./png/"+name;
     pixMap_.save("./png/"+name);
 
