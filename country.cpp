@@ -2,6 +2,25 @@
 
 Country::Country()
 {
+//    Country::PATH=Country::to_windowspath(QCoreApplication::applicationDirPath().toStdString());
+}
+
+string Country::find_windowspath(){
+    QString cur=QDir::currentPath();
+    qDebug()<<cur;
+    QString absolute_path=QDir(cur).absoluteFilePath("");
+    qDebug()<<absolute_path;
+    string abp=absolute_path.toStdString();
+
+    for(int i=0;i<abp.size();i++)
+    {
+        if(abp[i]=='/')
+        {
+            abp.erase(i,1);
+            abp.insert(i,"\\");
+        }
+    }
+    return abp;
 }
 
 QString Country::NAME[30]={"世界","中国","日本","韩国","蒙古","越南","泰国","缅甸","老挝","柬埔寨","马来西亚","新加坡","印度尼西亚","菲律宾","澳大利亚","新西兰"};
@@ -9,7 +28,8 @@ map<QString,int> Country::cindex={{"世界",0},{"中国",1},{"日本",2},{"韩�
 
 int Country::COLUMN=12;
 int Country::ROW=170;
-string Country::PATH="D:\\1111111111111111111\\CSU\\0000\\system\\System\\data\\";
+string Country::PATH=Country::find_windowspath();
+
 
 QString Country::Item(int r,int c){
     return QString::fromStdString(item[r*COLUMN+c]);
@@ -19,7 +39,8 @@ Country::~Country(){
 }
 
 void Country::read(int idx){
-    string s=PATH;
+//    cerr<<PATH<<endl;
+    string s=PATH+"\\data\\";
 
     if(idx<10) s+=char(idx+'0');
     else{
@@ -55,7 +76,7 @@ void Country::read(int idx){
 }
 
 void Country::read(QString text){
-    string s=PATH;
+    string s=PATH+"\\data\\";
     int idx=cindex[text];
 
     if(idx<10) s+=char(idx+'0');

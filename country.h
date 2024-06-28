@@ -3,11 +3,15 @@
 
 #include<QComboBox>
 #include<QDebug>
+#include<QString>
 #include<string>
 #include<iostream>
 #include<fstream>
 #include<sstream>
 #include<map>
+#include<QFile>
+#include<QDir>
+#include<QCoreApplication>
 using namespace std;
 
 const int MAXN=200;
@@ -19,6 +23,7 @@ private:
     int data_month[10];
 
 protected:
+    static string find_windowspath();
 
 public:
     Country();

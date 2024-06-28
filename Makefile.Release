@@ -259,6 +259,10 @@ release/moc_exceldialog.cpp: D:/Documents/Qt/5.9/mingw53_32/include/QtWidgets/QD
 		D:/Documents/Qt/5.9/mingw53_32/include/QtWidgets/qframe.h \
 		D:/Documents/Qt/5.9/mingw53_32/include/QtCore/qabstractitemmodel.h \
 		D:/Documents/Qt/5.9/mingw53_32/include/QtCore/QDebug \
+		D:/Documents/Qt/5.9/mingw53_32/include/QtCore/QFile \
+		D:/Documents/Qt/5.9/mingw53_32/include/QtCore/QDir \
+		D:/Documents/Qt/5.9/mingw53_32/include/QtCore/qdir.h \
+		D:/Documents/Qt/5.9/mingw53_32/include/QtCore/qfileinfo.h \
 		D:/Documents/Qt/5.9/mingw53_32/include/QtWidgets/QTableWidget \
 		D:/Documents/Qt/5.9/mingw53_32/include/QtWidgets/qtablewidget.h \
 		D:/Documents/Qt/5.9/mingw53_32/include/QtWidgets/qtableview.h \
@@ -282,8 +286,6 @@ release/moc_exceldialog.cpp: D:/Documents/Qt/5.9/mingw53_32/include/QtWidgets/QD
 		D:/Documents/Qt/5.9/mingw53_32/include/QtWidgets/qmessagebox.h \
 		D:/Documents/Qt/5.9/mingw53_32/include/QtWidgets/QFileDialog \
 		D:/Documents/Qt/5.9/mingw53_32/include/QtWidgets/qfiledialog.h \
-		D:/Documents/Qt/5.9/mingw53_32/include/QtCore/qdir.h \
-		D:/Documents/Qt/5.9/mingw53_32/include/QtCore/qfileinfo.h \
 		exceldialog.h \
 		release/moc_predefs.h \
 		D:/Documents/Qt/5.9/mingw53_32/bin/moc.exe
@@ -836,6 +838,8 @@ release/moc_graphdialog.cpp: D:/Documents/Qt/5.9/mingw53_32/include/QtWidgets/QD
 		D:/Documents/Qt/5.9/mingw53_32/include/QtCharts/qtchartsversion.h \
 		country.h \
 		D:/Documents/Qt/5.9/mingw53_32/include/QtCore/QDebug \
+		D:/Documents/Qt/5.9/mingw53_32/include/QtCore/QFile \
+		D:/Documents/Qt/5.9/mingw53_32/include/QtCore/QDir \
 		graphdialog.h \
 		release/moc_predefs.h \
 		D:/Documents/Qt/5.9/mingw53_32/bin/moc.exe
@@ -969,6 +973,10 @@ release/moc_mainwindow.cpp: D:/Documents/Qt/5.9/mingw53_32/include/QtWidgets/QMa
 		country.h \
 		D:/Documents/Qt/5.9/mingw53_32/include/QtWidgets/QComboBox \
 		D:/Documents/Qt/5.9/mingw53_32/include/QtWidgets/qcombobox.h \
+		D:/Documents/Qt/5.9/mingw53_32/include/QtCore/QFile \
+		D:/Documents/Qt/5.9/mingw53_32/include/QtCore/QDir \
+		D:/Documents/Qt/5.9/mingw53_32/include/QtCore/qdir.h \
+		D:/Documents/Qt/5.9/mingw53_32/include/QtCore/qfileinfo.h \
 		exceldialog.h \
 		D:/Documents/Qt/5.9/mingw53_32/include/QtWidgets/QDialog \
 		D:/Documents/Qt/5.9/mingw53_32/include/QtWidgets/qdialog.h \
@@ -987,8 +995,6 @@ release/moc_mainwindow.cpp: D:/Documents/Qt/5.9/mingw53_32/include/QtWidgets/QMa
 		D:/Documents/Qt/5.9/mingw53_32/include/QtWidgets/qmessagebox.h \
 		D:/Documents/Qt/5.9/mingw53_32/include/QtWidgets/QFileDialog \
 		D:/Documents/Qt/5.9/mingw53_32/include/QtWidgets/qfiledialog.h \
-		D:/Documents/Qt/5.9/mingw53_32/include/QtCore/qdir.h \
-		D:/Documents/Qt/5.9/mingw53_32/include/QtCore/qfileinfo.h \
 		graphdialog.h \
 		mycombobox.h \
 		D:/Documents/Qt/5.9/mingw53_32/include/QtWidgets/QListWidget \
@@ -1663,6 +1669,10 @@ release/moc_predictdialog.cpp: D:/Documents/Qt/5.9/mingw53_32/include/QtWidgets/
 		D:/Documents/Qt/5.9/mingw53_32/include/QtWidgets/qframe.h \
 		D:/Documents/Qt/5.9/mingw53_32/include/QtCore/qabstractitemmodel.h \
 		D:/Documents/Qt/5.9/mingw53_32/include/QtCore/QDebug \
+		D:/Documents/Qt/5.9/mingw53_32/include/QtCore/QFile \
+		D:/Documents/Qt/5.9/mingw53_32/include/QtCore/QDir \
+		D:/Documents/Qt/5.9/mingw53_32/include/QtCore/qdir.h \
+		D:/Documents/Qt/5.9/mingw53_32/include/QtCore/qfileinfo.h \
 		D:/Documents/Qt/5.9/mingw53_32/include/QtCharts/QtCharts \
 		D:/Documents/Qt/5.9/mingw53_32/include/QtCharts/QtChartsDepends \
 		D:/Documents/Qt/5.9/mingw53_32/include/QtCore/QtCore \
@@ -1690,8 +1700,6 @@ release/moc_predictdialog.cpp: D:/Documents/Qt/5.9/mingw53_32/include/QtWidgets/
 		D:/Documents/Qt/5.9/mingw53_32/include/QtCore/qdatetime.h \
 		D:/Documents/Qt/5.9/mingw53_32/include/QtCore/qdeadlinetimer.h \
 		D:/Documents/Qt/5.9/mingw53_32/include/QtCore/qelapsedtimer.h \
-		D:/Documents/Qt/5.9/mingw53_32/include/QtCore/qdir.h \
-		D:/Documents/Qt/5.9/mingw53_32/include/QtCore/qfileinfo.h \
 		D:/Documents/Qt/5.9/mingw53_32/include/QtCore/qdiriterator.h \
 		D:/Documents/Qt/5.9/mingw53_32/include/QtCore/qeasingcurve.h \
 		D:/Documents/Qt/5.9/mingw53_32/include/QtCore/qendian.h \
@@ -2246,6 +2254,10 @@ release/exceldialog.o: exceldialog.cpp exceldialog.h \
 		D:/Documents/Qt/5.9/mingw53_32/include/QtWidgets/qframe.h \
 		D:/Documents/Qt/5.9/mingw53_32/include/QtCore/qabstractitemmodel.h \
 		D:/Documents/Qt/5.9/mingw53_32/include/QtCore/QDebug \
+		D:/Documents/Qt/5.9/mingw53_32/include/QtCore/QFile \
+		D:/Documents/Qt/5.9/mingw53_32/include/QtCore/QDir \
+		D:/Documents/Qt/5.9/mingw53_32/include/QtCore/qdir.h \
+		D:/Documents/Qt/5.9/mingw53_32/include/QtCore/qfileinfo.h \
 		D:/Documents/Qt/5.9/mingw53_32/include/QtWidgets/QTableWidget \
 		D:/Documents/Qt/5.9/mingw53_32/include/QtWidgets/qtablewidget.h \
 		D:/Documents/Qt/5.9/mingw53_32/include/QtWidgets/qtableview.h \
@@ -2269,8 +2281,6 @@ release/exceldialog.o: exceldialog.cpp exceldialog.h \
 		D:/Documents/Qt/5.9/mingw53_32/include/QtWidgets/qmessagebox.h \
 		D:/Documents/Qt/5.9/mingw53_32/include/QtWidgets/QFileDialog \
 		D:/Documents/Qt/5.9/mingw53_32/include/QtWidgets/qfiledialog.h \
-		D:/Documents/Qt/5.9/mingw53_32/include/QtCore/qdir.h \
-		D:/Documents/Qt/5.9/mingw53_32/include/QtCore/qfileinfo.h \
 		ui_exceldialog.h \
 		D:/Documents/Qt/5.9/mingw53_32/include/QtCore/QVariant \
 		D:/Documents/Qt/5.9/mingw53_32/include/QtWidgets/QAction \
@@ -2839,6 +2849,8 @@ release/graphdialog.o: graphdialog.cpp graphdialog.h \
 		D:/Documents/Qt/5.9/mingw53_32/include/QtCharts/qtchartsversion.h \
 		country.h \
 		D:/Documents/Qt/5.9/mingw53_32/include/QtCore/QDebug \
+		D:/Documents/Qt/5.9/mingw53_32/include/QtCore/QFile \
+		D:/Documents/Qt/5.9/mingw53_32/include/QtCore/QDir \
 		ui_graphdialog.h \
 		D:/Documents/Qt/5.9/mingw53_32/include/QtWidgets/QAction \
 		D:/Documents/Qt/5.9/mingw53_32/include/QtWidgets/QApplication \
@@ -2977,6 +2989,10 @@ release/main.o: main.cpp mainwindow.h \
 		country.h \
 		D:/Documents/Qt/5.9/mingw53_32/include/QtWidgets/QComboBox \
 		D:/Documents/Qt/5.9/mingw53_32/include/QtWidgets/qcombobox.h \
+		D:/Documents/Qt/5.9/mingw53_32/include/QtCore/QFile \
+		D:/Documents/Qt/5.9/mingw53_32/include/QtCore/QDir \
+		D:/Documents/Qt/5.9/mingw53_32/include/QtCore/qdir.h \
+		D:/Documents/Qt/5.9/mingw53_32/include/QtCore/qfileinfo.h \
 		exceldialog.h \
 		D:/Documents/Qt/5.9/mingw53_32/include/QtWidgets/QDialog \
 		D:/Documents/Qt/5.9/mingw53_32/include/QtWidgets/qdialog.h \
@@ -2995,8 +3011,6 @@ release/main.o: main.cpp mainwindow.h \
 		D:/Documents/Qt/5.9/mingw53_32/include/QtWidgets/qmessagebox.h \
 		D:/Documents/Qt/5.9/mingw53_32/include/QtWidgets/QFileDialog \
 		D:/Documents/Qt/5.9/mingw53_32/include/QtWidgets/qfiledialog.h \
-		D:/Documents/Qt/5.9/mingw53_32/include/QtCore/qdir.h \
-		D:/Documents/Qt/5.9/mingw53_32/include/QtCore/qfileinfo.h \
 		graphdialog.h \
 		mycombobox.h \
 		D:/Documents/Qt/5.9/mingw53_32/include/QtWidgets/QListWidget \
@@ -3543,6 +3557,10 @@ release/mainwindow.o: mainwindow.cpp mainwindow.h \
 		country.h \
 		D:/Documents/Qt/5.9/mingw53_32/include/QtWidgets/QComboBox \
 		D:/Documents/Qt/5.9/mingw53_32/include/QtWidgets/qcombobox.h \
+		D:/Documents/Qt/5.9/mingw53_32/include/QtCore/QFile \
+		D:/Documents/Qt/5.9/mingw53_32/include/QtCore/QDir \
+		D:/Documents/Qt/5.9/mingw53_32/include/QtCore/qdir.h \
+		D:/Documents/Qt/5.9/mingw53_32/include/QtCore/qfileinfo.h \
 		exceldialog.h \
 		D:/Documents/Qt/5.9/mingw53_32/include/QtWidgets/QDialog \
 		D:/Documents/Qt/5.9/mingw53_32/include/QtWidgets/qdialog.h \
@@ -3561,8 +3579,6 @@ release/mainwindow.o: mainwindow.cpp mainwindow.h \
 		D:/Documents/Qt/5.9/mingw53_32/include/QtWidgets/qmessagebox.h \
 		D:/Documents/Qt/5.9/mingw53_32/include/QtWidgets/QFileDialog \
 		D:/Documents/Qt/5.9/mingw53_32/include/QtWidgets/qfiledialog.h \
-		D:/Documents/Qt/5.9/mingw53_32/include/QtCore/qdir.h \
-		D:/Documents/Qt/5.9/mingw53_32/include/QtCore/qfileinfo.h \
 		graphdialog.h \
 		mycombobox.h \
 		D:/Documents/Qt/5.9/mingw53_32/include/QtWidgets/QListWidget \
@@ -4103,7 +4119,11 @@ release/country.o: country.cpp country.h \
 		D:/Documents/Qt/5.9/mingw53_32/include/QtWidgets/qrubberband.h \
 		D:/Documents/Qt/5.9/mingw53_32/include/QtWidgets/qframe.h \
 		D:/Documents/Qt/5.9/mingw53_32/include/QtCore/qabstractitemmodel.h \
-		D:/Documents/Qt/5.9/mingw53_32/include/QtCore/QDebug
+		D:/Documents/Qt/5.9/mingw53_32/include/QtCore/QDebug \
+		D:/Documents/Qt/5.9/mingw53_32/include/QtCore/QFile \
+		D:/Documents/Qt/5.9/mingw53_32/include/QtCore/QDir \
+		D:/Documents/Qt/5.9/mingw53_32/include/QtCore/qdir.h \
+		D:/Documents/Qt/5.9/mingw53_32/include/QtCore/qfileinfo.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o release\country.o country.cpp
 
 release/mycombobox.o: mycombobox.cpp mycombobox.h \
@@ -4363,6 +4383,10 @@ release/predictdialog.o: predictdialog.cpp predictdialog.h \
 		D:/Documents/Qt/5.9/mingw53_32/include/QtWidgets/qframe.h \
 		D:/Documents/Qt/5.9/mingw53_32/include/QtCore/qabstractitemmodel.h \
 		D:/Documents/Qt/5.9/mingw53_32/include/QtCore/QDebug \
+		D:/Documents/Qt/5.9/mingw53_32/include/QtCore/QFile \
+		D:/Documents/Qt/5.9/mingw53_32/include/QtCore/QDir \
+		D:/Documents/Qt/5.9/mingw53_32/include/QtCore/qdir.h \
+		D:/Documents/Qt/5.9/mingw53_32/include/QtCore/qfileinfo.h \
 		D:/Documents/Qt/5.9/mingw53_32/include/QtCharts/QtCharts \
 		D:/Documents/Qt/5.9/mingw53_32/include/QtCharts/QtChartsDepends \
 		D:/Documents/Qt/5.9/mingw53_32/include/QtCore/QtCore \
@@ -4390,8 +4414,6 @@ release/predictdialog.o: predictdialog.cpp predictdialog.h \
 		D:/Documents/Qt/5.9/mingw53_32/include/QtCore/qdatetime.h \
 		D:/Documents/Qt/5.9/mingw53_32/include/QtCore/qdeadlinetimer.h \
 		D:/Documents/Qt/5.9/mingw53_32/include/QtCore/qelapsedtimer.h \
-		D:/Documents/Qt/5.9/mingw53_32/include/QtCore/qdir.h \
-		D:/Documents/Qt/5.9/mingw53_32/include/QtCore/qfileinfo.h \
 		D:/Documents/Qt/5.9/mingw53_32/include/QtCore/qdiriterator.h \
 		D:/Documents/Qt/5.9/mingw53_32/include/QtCore/qeasingcurve.h \
 		D:/Documents/Qt/5.9/mingw53_32/include/QtCore/qendian.h \
