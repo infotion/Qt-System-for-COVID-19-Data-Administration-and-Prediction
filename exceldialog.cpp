@@ -50,6 +50,7 @@ void ExcelDialog::build(){
 
 //    if(ui->window) delete ui->window;
     ui->window=new QMainWindow;
+    ui->window->setWindowTitle(ui->CountryBox->currentText()+"疫情数据");
     ui->window->setCentralWidget(t);
 
     QToolBar *tb=new QToolBar("工具栏",ui->window);
