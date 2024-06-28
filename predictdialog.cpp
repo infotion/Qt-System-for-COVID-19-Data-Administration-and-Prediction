@@ -52,7 +52,7 @@ void PredictDialog::Calc(){
 
     int col=ui->comboBox->currentIndex()*2;
     Country *st=new Country;
-    st->read(ui->CountryBox->currentText());
+    st->read(ui->CountryBox->currentIndex());
     while(S<=6 and !st->calc_month(S,col)) S++;
 
     if(S>=T){
