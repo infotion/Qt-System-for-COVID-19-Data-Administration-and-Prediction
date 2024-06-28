@@ -289,7 +289,12 @@ void PredictDialog::screenshot(){
 
     QDialog *as=new QDialog;
     QVBoxLayout *vbox = new QVBoxLayout(this);
-    vbox->addWidget(new QLabel("图片已保存至D:\\1111111111111111111\\CSU\\0000\\system\\System\\png\\"+name));
+    QString *text=new QString("图片已保存至");
+    text->append(QString::fromStdString(Country::PATH));
+    text->append("\\png\\");
+    text->append(name);
+    vbox->addWidget(new QLabel(*text));
+//    vbox->addWidget(new QLabel("图片已保存至D:\\1111111111111111111\\CSU\\0000\\system\\System\\png\\"+name));
     QDialogButtonBox *b=new QDialogButtonBox(QDialogButtonBox::Ok);
     vbox->addWidget(b);
     as->setLayout(vbox);
