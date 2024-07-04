@@ -11,23 +11,23 @@ ExcelDialog::ExcelDialog(QWidget *parent) :
 
 ExcelDialog::~ExcelDialog()
 {
-    if(t!=NULL) delete t;
-    delete ui;
+//    if(t!=NULL) delete t;
+//    delete ui;
 }
 
 void ExcelDialog::build(){
-    t=new QTableWidget;
+    ui->t=new QTableWidget;
     QComboBox *country=ui->CountryBox;
 
     Country *st=new Country;
     st->read(country->currentIndex());
 
-    t->setWindowTitle(Country::NAME[country->currentIndex()]+"疫情数据表格");
-    t->resize(1200,900);
+    ui->t->setWindowTitle(Country::NAME[country->currentIndex()]+"疫情数据表格");
+    ui->t->resize(1200,900);
 
     int R=Country::ROW,C=Country::COLUMN;
-    t->setRowCount(R);
-    t->setColumnCount(C-1);
+    ui->t->setRowCount(R);
+    ui->t->setColumnCount(C-1);
 
 
     for(int i=0;i<R;i++)
@@ -35,14 +35,14 @@ void ExcelDialog::build(){
 //        qDebug()<<"!"<<i;
         QString text=st->Item(i,7);
         QTableWidgetItem *it=new QTableWidgetItem(text);
-        t->setItem(i,0,it);
+        ui->t->setItem(i,0,it);
 
         for(int j=1;j+1<C;j++)
         {
             int y=j+(j>=7);//qDebug()<<i<<" "<<y;
             QString text=st->Item(i,y);
             it=new QTableWidgetItem(text);
-            t->setItem(i,j,it);
+            ui->t->setItem(i,j,it);
 //            delete it;
         }
         delete it;
@@ -51,7 +51,7 @@ void ExcelDialog::build(){
 //    if(ui->window) delete ui->window;
     ui->window=new QMainWindow;
     ui->window->setWindowTitle(ui->CountryBox->currentText()+"疫情数据");
-    ui->window->setCentralWidget(t);
+    ui->window->setCentralWidget(ui->t);
 
     QToolBar *tb=new QToolBar("工具栏",ui->window);
     QAction *action_S=new QAction(tr("保存为Excel(&S)"),ui->window);
@@ -67,7 +67,7 @@ void ExcelDialog::build(){
 
 void ExcelDialog::save(){
     qDebug()<<"SC OK";
-    QString fileName = QFileDialog::getSaveFileName(t, "保存",QStandardPaths::writableLocation(QStandardPaths::DocumentsLocation),"Excel 文件(*.xls *.xlsx)");
+    QString fileName = QFileDialog::getSaveFileName(ui->t, "保存",QStandardPaths::writableLocation(QStandardPaths::DocumentsLocation),"Excel 文件(*.xls *.xlsx)");
          if (fileName!="")
          {
              QAxObject *excel = new QAxObject;
@@ -84,9 +84,9 @@ void ExcelDialog::save(){
 
                  int i,j;
                  //QTablewidget 获取数据的列数
-                 int colcount=t->columnCount();
+                 int colcount=ui->t->columnCount();
                   //QTablewidget 获取数据的行数
-                 int rowscount=t->rowCount();
+                 int rowscount=ui->t->rowCount();
                  QString title=ui->CountryBox->currentText()+"疫情数据";
                  QAxObject *cell,*col;
 
@@ -116,7 +116,7 @@ void ExcelDialog::save(){
 //                     columnName.append(":");
 //                     columnName.append(QChar(i + 'A'));
                      col = worksheet->querySubObject("Columns(const QString&)", columnName);
-                     col->setProperty("ColumnWidth", t->columnWidth(i)/6);
+                     col->setProperty("ColumnWidth", ui->t->columnWidth(i)/6);
                      cell=worksheet->querySubObject("Cells(int,int)", 2, i+1);
                      //QTableWidget 获取表格头部文字信息
 //                     columnName=ui->t->horizontalHeaderItem(i)->text();qDebug()<<"?";
@@ -135,7 +135,7 @@ void ExcelDialog::save(){
                  for(i=0;i<rowscount;i++){
                      for (j=0;j<colcount;j++)
                      {
-                         worksheet->querySubObject("Cells(int,int)", i+3, j+1)->dynamicCall("SetValue(const QString&)", t->item(i,j)?t->item(i,j)->text():"");
+                         worksheet->querySubObject("Cells(int,int)", i+3, j+1)->dynamicCall("SetValue(const QString&)", ui->t->item(i,j)?ui->t->item(i,j)->text():"");
                      }
                  }
 
@@ -156,14 +156,14 @@ void ExcelDialog::save(){
                  QString lrange;
                  lrange.append("A2:");
                  lrange.append(colcount - 1 + 'A');
-                 lrange.append(QString::number(t->rowCount() + 2));
+                 lrange.append(QString::number(ui->t->rowCount() + 2));
                  range = worksheet->querySubObject("Range(const QString&)", lrange);
                  range->querySubObject("Borders")->setProperty("LineStyle", QString::number(1));
                  range->querySubObject("Borders")->setProperty("Color", QColor(0, 0, 0));
                  //调整数据区行高
                  QString rowsName;
                  rowsName.append("2:");
-                 rowsName.append(QString::number(t->rowCount() + 2));
+                 rowsName.append(QString::number(ui->t->rowCount() + 2));
                  range = worksheet->querySubObject("Range(const QString&)", rowsName);
                  range->setProperty("RowHeight", 20);
                  workbook->dynamicCall("SaveAs(const QString&)",QDir::toNativeSeparators(fileName));//保存至fileName

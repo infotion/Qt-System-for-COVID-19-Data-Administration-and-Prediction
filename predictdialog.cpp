@@ -37,18 +37,18 @@ void PredictDialog::Calc(){
     QComboBox *country=ui->CountryBox;
     int idx=country->currentIndex();
 
-//    if(idx==8 or idx==4 or idx==9)
-//    {
-//        QDialog *as=new QDialog;
-//        QVBoxLayout *vbox = new QVBoxLayout(this);
-//        vbox->addWidget(new QLabel(Country::NAME[idx]+"收集的疫情数据极少（远少于中国），不具有统计意义，还是看看其他国家（地区）吧"));
-//        QDialogButtonBox *b=new QDialogButtonBox(QDialogButtonBox::Ok);
-//        vbox->addWidget(b);
-//        as->setLayout(vbox);
-//        as->show();
-//        connect(b,SIGNAL(accepted()),as,SLOT(accept()));
-//        return;
-//    }
+    if(idx==8 or idx==4 or idx==9)
+    {
+        QDialog *as=new QDialog;
+        QVBoxLayout *vbox = new QVBoxLayout(this);
+        vbox->addWidget(new QLabel(Country::NAME[idx]+"收集的疫情数据极少（远少于中国），不具有统计意义，还是看看其他国家（地区）吧"));
+        QDialogButtonBox *b=new QDialogButtonBox(QDialogButtonBox::Ok);
+        vbox->addWidget(b);
+        as->setLayout(vbox);
+        as->show();
+        connect(b,SIGNAL(accepted()),as,SLOT(accept()));
+        return;
+    }
 
     int col=ui->comboBox->currentIndex()*2;
     Country *st=new Country;
@@ -151,7 +151,7 @@ void PredictDialog::Calc(){
     B_2/=ssX-N*aX*aX;
     A_2=aY-B_2*aX;
 
-    for(int i=S;i<=T+D;i++) Y2[i]=pow(10,(B_2*i+A_2)*log10(2.7182818285));
+    for(int i=S;i<=T+D;i++) Y2[i]=pow(2.7182818285,(B_2*i+A_2));
 
     double R2=0.0;
     for(int i=S;i<=T;i++)

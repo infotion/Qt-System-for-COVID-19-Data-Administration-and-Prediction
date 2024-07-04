@@ -6,7 +6,7 @@
 #include <QVBoxLayout>
 #include <QLabel>
 #include <QtCharts>
-#include <QBarSet>
+//#include <QBarSet>
 #include "country.h"
 
 namespace Ui {

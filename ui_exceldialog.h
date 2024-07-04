@@ -30,6 +30,7 @@ public:
     QComboBox *CountryBox;
     QLabel *CountryLabel;
     QMainWindow *window;
+    QTableWidget *t;
 
     void setupUi(QDialog *ExcelDialog)
     {
