@@ -11,7 +11,6 @@
 #include <QAxObject>
 #include <QMessageBox>
 #include <QFileDialog>
-//#include <QFile>
 
 namespace Ui {
 class ExcelDialog;
@@ -27,7 +26,6 @@ public:
 
 private:
     Ui::ExcelDialog *ui;
-    QTableWidget *t;
 
 private slots:
     void build();

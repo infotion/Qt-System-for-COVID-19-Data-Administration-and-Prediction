@@ -259,10 +259,14 @@ release/moc_exceldialog.cpp: D:/Documents/Qt/5.9/mingw53_32/include/QtWidgets/QD
 		D:/Documents/Qt/5.9/mingw53_32/include/QtWidgets/qframe.h \
 		D:/Documents/Qt/5.9/mingw53_32/include/QtCore/qabstractitemmodel.h \
 		D:/Documents/Qt/5.9/mingw53_32/include/QtCore/QDebug \
+		D:/Documents/Qt/5.9/mingw53_32/include/QtCore/QString \
 		D:/Documents/Qt/5.9/mingw53_32/include/QtCore/QFile \
 		D:/Documents/Qt/5.9/mingw53_32/include/QtCore/QDir \
 		D:/Documents/Qt/5.9/mingw53_32/include/QtCore/qdir.h \
 		D:/Documents/Qt/5.9/mingw53_32/include/QtCore/qfileinfo.h \
+		D:/Documents/Qt/5.9/mingw53_32/include/QtCore/QCoreApplication \
+		D:/Documents/Qt/5.9/mingw53_32/include/QtCore/qcoreapplication.h \
+		D:/Documents/Qt/5.9/mingw53_32/include/QtCore/qeventloop.h \
 		D:/Documents/Qt/5.9/mingw53_32/include/QtWidgets/QTableWidget \
 		D:/Documents/Qt/5.9/mingw53_32/include/QtWidgets/qtablewidget.h \
 		D:/Documents/Qt/5.9/mingw53_32/include/QtWidgets/qtableview.h \
@@ -289,7 +293,7 @@ release/moc_exceldialog.cpp: D:/Documents/Qt/5.9/mingw53_32/include/QtWidgets/QD
 		exceldialog.h \
 		release/moc_predefs.h \
 		D:/Documents/Qt/5.9/mingw53_32/bin/moc.exe
-	D:\Documents\Qt\5.9\mingw53_32\bin\moc.exe $(DEFINES) --include release/moc_predefs.h -ID:/Documents/Qt/5.9/mingw53_32/mkspecs/win32-g++ -ID:/1111111111111111111/CSU/0000/system/System -ID:/Documents/Qt/5.9/mingw53_32/include -ID:/Documents/Qt/5.9/mingw53_32/include/QtCharts -ID:/Documents/Qt/5.9/mingw53_32/include/ActiveQt -ID:/Documents/Qt/5.9/mingw53_32/include/QtWidgets -ID:/Documents/Qt/5.9/mingw53_32/include/QtGui -ID:/Documents/Qt/5.9/mingw53_32/include/QtANGLE -ID:/Documents/Qt/5.9/mingw53_32/include/QtCore -ID:/Documents/Qt/Tools/mingw530_32/lib/gcc/i686-w64-mingw32/5.3.0/include -ID:/Documents/Qt/Tools/mingw530_32/lib/gcc/i686-w64-mingw32/5.3.0/include-fixed -ID:/Documents/Qt/Tools/mingw530_32/i686-w64-mingw32/include -ID:/Documents/Qt/Tools/mingw530_32/i686-w64-mingw32/include/c++ -ID:/Documents/Qt/Tools/mingw530_32/i686-w64-mingw32/include/c++/i686-w64-mingw32 -ID:/Documents/Qt/Tools/mingw530_32/i686-w64-mingw32/include/c++/backward exceldialog.h -o release\moc_exceldialog.cpp
+	D:\Documents\Qt\5.9\mingw53_32\bin\moc.exe $(DEFINES) --include release/moc_predefs.h -ID:/Documents/Qt/5.9/mingw53_32/mkspecs/win32-g++ -ID:/1111111111111111111/CSU/0000/system/source -ID:/Documents/Qt/5.9/mingw53_32/include -ID:/Documents/Qt/5.9/mingw53_32/include/QtCharts -ID:/Documents/Qt/5.9/mingw53_32/include/ActiveQt -ID:/Documents/Qt/5.9/mingw53_32/include/QtWidgets -ID:/Documents/Qt/5.9/mingw53_32/include/QtGui -ID:/Documents/Qt/5.9/mingw53_32/include/QtANGLE -ID:/Documents/Qt/5.9/mingw53_32/include/QtCore -ID:/Documents/Qt/Tools/mingw530_32/lib/gcc/i686-w64-mingw32/5.3.0/include -ID:/Documents/Qt/Tools/mingw530_32/lib/gcc/i686-w64-mingw32/5.3.0/include-fixed -ID:/Documents/Qt/Tools/mingw530_32/i686-w64-mingw32/include -ID:/Documents/Qt/Tools/mingw530_32/i686-w64-mingw32/include/c++ -ID:/Documents/Qt/Tools/mingw530_32/i686-w64-mingw32/include/c++/i686-w64-mingw32 -ID:/Documents/Qt/Tools/mingw530_32/i686-w64-mingw32/include/c++/backward exceldialog.h -o release\moc_exceldialog.cpp
 
 release/moc_graphdialog.cpp: D:/Documents/Qt/5.9/mingw53_32/include/QtWidgets/QDialog \
 		D:/Documents/Qt/5.9/mingw53_32/include/QtWidgets/qdialog.h \
@@ -838,12 +842,14 @@ release/moc_graphdialog.cpp: D:/Documents/Qt/5.9/mingw53_32/include/QtWidgets/QD
 		D:/Documents/Qt/5.9/mingw53_32/include/QtCharts/qtchartsversion.h \
 		country.h \
 		D:/Documents/Qt/5.9/mingw53_32/include/QtCore/QDebug \
+		D:/Documents/Qt/5.9/mingw53_32/include/QtCore/QString \
 		D:/Documents/Qt/5.9/mingw53_32/include/QtCore/QFile \
 		D:/Documents/Qt/5.9/mingw53_32/include/QtCore/QDir \
+		D:/Documents/Qt/5.9/mingw53_32/include/QtCore/QCoreApplication \
 		graphdialog.h \
 		release/moc_predefs.h \
 		D:/Documents/Qt/5.9/mingw53_32/bin/moc.exe
-	D:\Documents\Qt\5.9\mingw53_32\bin\moc.exe $(DEFINES) --include release/moc_predefs.h -ID:/Documents/Qt/5.9/mingw53_32/mkspecs/win32-g++ -ID:/1111111111111111111/CSU/0000/system/System -ID:/Documents/Qt/5.9/mingw53_32/include -ID:/Documents/Qt/5.9/mingw53_32/include/QtCharts -ID:/Documents/Qt/5.9/mingw53_32/include/ActiveQt -ID:/Documents/Qt/5.9/mingw53_32/include/QtWidgets -ID:/Documents/Qt/5.9/mingw53_32/include/QtGui -ID:/Documents/Qt/5.9/mingw53_32/include/QtANGLE -ID:/Documents/Qt/5.9/mingw53_32/include/QtCore -ID:/Documents/Qt/Tools/mingw530_32/lib/gcc/i686-w64-mingw32/5.3.0/include -ID:/Documents/Qt/Tools/mingw530_32/lib/gcc/i686-w64-mingw32/5.3.0/include-fixed -ID:/Documents/Qt/Tools/mingw530_32/i686-w64-mingw32/include -ID:/Documents/Qt/Tools/mingw530_32/i686-w64-mingw32/include/c++ -ID:/Documents/Qt/Tools/mingw530_32/i686-w64-mingw32/include/c++/i686-w64-mingw32 -ID:/Documents/Qt/Tools/mingw530_32/i686-w64-mingw32/include/c++/backward graphdialog.h -o release\moc_graphdialog.cpp
+	D:\Documents\Qt\5.9\mingw53_32\bin\moc.exe $(DEFINES) --include release/moc_predefs.h -ID:/Documents/Qt/5.9/mingw53_32/mkspecs/win32-g++ -ID:/1111111111111111111/CSU/0000/system/source -ID:/Documents/Qt/5.9/mingw53_32/include -ID:/Documents/Qt/5.9/mingw53_32/include/QtCharts -ID:/Documents/Qt/5.9/mingw53_32/include/ActiveQt -ID:/Documents/Qt/5.9/mingw53_32/include/QtWidgets -ID:/Documents/Qt/5.9/mingw53_32/include/QtGui -ID:/Documents/Qt/5.9/mingw53_32/include/QtANGLE -ID:/Documents/Qt/5.9/mingw53_32/include/QtCore -ID:/Documents/Qt/Tools/mingw530_32/lib/gcc/i686-w64-mingw32/5.3.0/include -ID:/Documents/Qt/Tools/mingw530_32/lib/gcc/i686-w64-mingw32/5.3.0/include-fixed -ID:/Documents/Qt/Tools/mingw530_32/i686-w64-mingw32/include -ID:/Documents/Qt/Tools/mingw530_32/i686-w64-mingw32/include/c++ -ID:/Documents/Qt/Tools/mingw530_32/i686-w64-mingw32/include/c++/i686-w64-mingw32 -ID:/Documents/Qt/Tools/mingw530_32/i686-w64-mingw32/include/c++/backward graphdialog.h -o release\moc_graphdialog.cpp
 
 release/moc_mainwindow.cpp: D:/Documents/Qt/5.9/mingw53_32/include/QtWidgets/QMainWindow \
 		D:/Documents/Qt/5.9/mingw53_32/include/QtWidgets/qmainwindow.h \
@@ -973,10 +979,14 @@ release/moc_mainwindow.cpp: D:/Documents/Qt/5.9/mingw53_32/include/QtWidgets/QMa
 		country.h \
 		D:/Documents/Qt/5.9/mingw53_32/include/QtWidgets/QComboBox \
 		D:/Documents/Qt/5.9/mingw53_32/include/QtWidgets/qcombobox.h \
+		D:/Documents/Qt/5.9/mingw53_32/include/QtCore/QString \
 		D:/Documents/Qt/5.9/mingw53_32/include/QtCore/QFile \
 		D:/Documents/Qt/5.9/mingw53_32/include/QtCore/QDir \
 		D:/Documents/Qt/5.9/mingw53_32/include/QtCore/qdir.h \
 		D:/Documents/Qt/5.9/mingw53_32/include/QtCore/qfileinfo.h \
+		D:/Documents/Qt/5.9/mingw53_32/include/QtCore/QCoreApplication \
+		D:/Documents/Qt/5.9/mingw53_32/include/QtCore/qcoreapplication.h \
+		D:/Documents/Qt/5.9/mingw53_32/include/QtCore/qeventloop.h \
 		exceldialog.h \
 		D:/Documents/Qt/5.9/mingw53_32/include/QtWidgets/QDialog \
 		D:/Documents/Qt/5.9/mingw53_32/include/QtWidgets/qdialog.h \
@@ -1023,7 +1033,6 @@ release/moc_mainwindow.cpp: D:/Documents/Qt/5.9/mingw53_32/include/QtWidgets/QMa
 		D:/Documents/Qt/5.9/mingw53_32/include/QtCore/QtCoreDepends \
 		D:/Documents/Qt/5.9/mingw53_32/include/QtCore/qabstractanimation.h \
 		D:/Documents/Qt/5.9/mingw53_32/include/QtCore/qabstracteventdispatcher.h \
-		D:/Documents/Qt/5.9/mingw53_32/include/QtCore/qeventloop.h \
 		D:/Documents/Qt/5.9/mingw53_32/include/QtCore/qabstractnativeeventfilter.h \
 		D:/Documents/Qt/5.9/mingw53_32/include/QtCore/qabstractproxymodel.h \
 		D:/Documents/Qt/5.9/mingw53_32/include/QtCore/qabstractstate.h \
@@ -1039,7 +1048,6 @@ release/moc_mainwindow.cpp: D:/Documents/Qt/5.9/mingw53_32/include/QtWidgets/QMa
 		D:/Documents/Qt/5.9/mingw53_32/include/QtCore/qcollator.h \
 		D:/Documents/Qt/5.9/mingw53_32/include/QtCore/qcommandlineoption.h \
 		D:/Documents/Qt/5.9/mingw53_32/include/QtCore/qcommandlineparser.h \
-		D:/Documents/Qt/5.9/mingw53_32/include/QtCore/qcoreapplication.h \
 		D:/Documents/Qt/5.9/mingw53_32/include/QtCore/qcryptographichash.h \
 		D:/Documents/Qt/5.9/mingw53_32/include/QtCore/qdatetime.h \
 		D:/Documents/Qt/5.9/mingw53_32/include/QtCore/qdeadlinetimer.h \
@@ -1409,10 +1417,11 @@ release/moc_mainwindow.cpp: D:/Documents/Qt/5.9/mingw53_32/include/QtWidgets/QMa
 		D:/Documents/Qt/5.9/mingw53_32/include/QtCharts/qtchartsversion.h \
 		predictdialog.h \
 		polycurve.h \
+		D:/Documents/Qt/5.9/mingw53_32/include/QtGui/QPixmap \
 		mainwindow.h \
 		release/moc_predefs.h \
 		D:/Documents/Qt/5.9/mingw53_32/bin/moc.exe
-	D:\Documents\Qt\5.9\mingw53_32\bin\moc.exe $(DEFINES) --include release/moc_predefs.h -ID:/Documents/Qt/5.9/mingw53_32/mkspecs/win32-g++ -ID:/1111111111111111111/CSU/0000/system/System -ID:/Documents/Qt/5.9/mingw53_32/include -ID:/Documents/Qt/5.9/mingw53_32/include/QtCharts -ID:/Documents/Qt/5.9/mingw53_32/include/ActiveQt -ID:/Documents/Qt/5.9/mingw53_32/include/QtWidgets -ID:/Documents/Qt/5.9/mingw53_32/include/QtGui -ID:/Documents/Qt/5.9/mingw53_32/include/QtANGLE -ID:/Documents/Qt/5.9/mingw53_32/include/QtCore -ID:/Documents/Qt/Tools/mingw530_32/lib/gcc/i686-w64-mingw32/5.3.0/include -ID:/Documents/Qt/Tools/mingw530_32/lib/gcc/i686-w64-mingw32/5.3.0/include-fixed -ID:/Documents/Qt/Tools/mingw530_32/i686-w64-mingw32/include -ID:/Documents/Qt/Tools/mingw530_32/i686-w64-mingw32/include/c++ -ID:/Documents/Qt/Tools/mingw530_32/i686-w64-mingw32/include/c++/i686-w64-mingw32 -ID:/Documents/Qt/Tools/mingw530_32/i686-w64-mingw32/include/c++/backward mainwindow.h -o release\moc_mainwindow.cpp
+	D:\Documents\Qt\5.9\mingw53_32\bin\moc.exe $(DEFINES) --include release/moc_predefs.h -ID:/Documents/Qt/5.9/mingw53_32/mkspecs/win32-g++ -ID:/1111111111111111111/CSU/0000/system/source -ID:/Documents/Qt/5.9/mingw53_32/include -ID:/Documents/Qt/5.9/mingw53_32/include/QtCharts -ID:/Documents/Qt/5.9/mingw53_32/include/ActiveQt -ID:/Documents/Qt/5.9/mingw53_32/include/QtWidgets -ID:/Documents/Qt/5.9/mingw53_32/include/QtGui -ID:/Documents/Qt/5.9/mingw53_32/include/QtANGLE -ID:/Documents/Qt/5.9/mingw53_32/include/QtCore -ID:/Documents/Qt/Tools/mingw530_32/lib/gcc/i686-w64-mingw32/5.3.0/include -ID:/Documents/Qt/Tools/mingw530_32/lib/gcc/i686-w64-mingw32/5.3.0/include-fixed -ID:/Documents/Qt/Tools/mingw530_32/i686-w64-mingw32/include -ID:/Documents/Qt/Tools/mingw530_32/i686-w64-mingw32/include/c++ -ID:/Documents/Qt/Tools/mingw530_32/i686-w64-mingw32/include/c++/i686-w64-mingw32 -ID:/Documents/Qt/Tools/mingw530_32/i686-w64-mingw32/include/c++/backward mainwindow.h -o release\moc_mainwindow.cpp
 
 release/moc_mycombobox.cpp: D:/Documents/Qt/5.9/mingw53_32/include/QtWidgets/QComboBox \
 		D:/Documents/Qt/5.9/mingw53_32/include/QtWidgets/qcombobox.h \
@@ -1548,7 +1557,7 @@ release/moc_mycombobox.cpp: D:/Documents/Qt/5.9/mingw53_32/include/QtWidgets/QCo
 		mycombobox.h \
 		release/moc_predefs.h \
 		D:/Documents/Qt/5.9/mingw53_32/bin/moc.exe
-	D:\Documents\Qt\5.9\mingw53_32\bin\moc.exe $(DEFINES) --include release/moc_predefs.h -ID:/Documents/Qt/5.9/mingw53_32/mkspecs/win32-g++ -ID:/1111111111111111111/CSU/0000/system/System -ID:/Documents/Qt/5.9/mingw53_32/include -ID:/Documents/Qt/5.9/mingw53_32/include/QtCharts -ID:/Documents/Qt/5.9/mingw53_32/include/ActiveQt -ID:/Documents/Qt/5.9/mingw53_32/include/QtWidgets -ID:/Documents/Qt/5.9/mingw53_32/include/QtGui -ID:/Documents/Qt/5.9/mingw53_32/include/QtANGLE -ID:/Documents/Qt/5.9/mingw53_32/include/QtCore -ID:/Documents/Qt/Tools/mingw530_32/lib/gcc/i686-w64-mingw32/5.3.0/include -ID:/Documents/Qt/Tools/mingw530_32/lib/gcc/i686-w64-mingw32/5.3.0/include-fixed -ID:/Documents/Qt/Tools/mingw530_32/i686-w64-mingw32/include -ID:/Documents/Qt/Tools/mingw530_32/i686-w64-mingw32/include/c++ -ID:/Documents/Qt/Tools/mingw530_32/i686-w64-mingw32/include/c++/i686-w64-mingw32 -ID:/Documents/Qt/Tools/mingw530_32/i686-w64-mingw32/include/c++/backward mycombobox.h -o release\moc_mycombobox.cpp
+	D:\Documents\Qt\5.9\mingw53_32\bin\moc.exe $(DEFINES) --include release/moc_predefs.h -ID:/Documents/Qt/5.9/mingw53_32/mkspecs/win32-g++ -ID:/1111111111111111111/CSU/0000/system/source -ID:/Documents/Qt/5.9/mingw53_32/include -ID:/Documents/Qt/5.9/mingw53_32/include/QtCharts -ID:/Documents/Qt/5.9/mingw53_32/include/ActiveQt -ID:/Documents/Qt/5.9/mingw53_32/include/QtWidgets -ID:/Documents/Qt/5.9/mingw53_32/include/QtGui -ID:/Documents/Qt/5.9/mingw53_32/include/QtANGLE -ID:/Documents/Qt/5.9/mingw53_32/include/QtCore -ID:/Documents/Qt/Tools/mingw530_32/lib/gcc/i686-w64-mingw32/5.3.0/include -ID:/Documents/Qt/Tools/mingw530_32/lib/gcc/i686-w64-mingw32/5.3.0/include-fixed -ID:/Documents/Qt/Tools/mingw530_32/i686-w64-mingw32/include -ID:/Documents/Qt/Tools/mingw530_32/i686-w64-mingw32/include/c++ -ID:/Documents/Qt/Tools/mingw530_32/i686-w64-mingw32/include/c++/i686-w64-mingw32 -ID:/Documents/Qt/Tools/mingw530_32/i686-w64-mingw32/include/c++/backward mycombobox.h -o release\moc_mycombobox.cpp
 
 release/moc_predictdialog.cpp: D:/Documents/Qt/5.9/mingw53_32/include/QtWidgets/QDialog \
 		D:/Documents/Qt/5.9/mingw53_32/include/QtWidgets/qdialog.h \
@@ -1669,17 +1678,20 @@ release/moc_predictdialog.cpp: D:/Documents/Qt/5.9/mingw53_32/include/QtWidgets/
 		D:/Documents/Qt/5.9/mingw53_32/include/QtWidgets/qframe.h \
 		D:/Documents/Qt/5.9/mingw53_32/include/QtCore/qabstractitemmodel.h \
 		D:/Documents/Qt/5.9/mingw53_32/include/QtCore/QDebug \
+		D:/Documents/Qt/5.9/mingw53_32/include/QtCore/QString \
 		D:/Documents/Qt/5.9/mingw53_32/include/QtCore/QFile \
 		D:/Documents/Qt/5.9/mingw53_32/include/QtCore/QDir \
 		D:/Documents/Qt/5.9/mingw53_32/include/QtCore/qdir.h \
 		D:/Documents/Qt/5.9/mingw53_32/include/QtCore/qfileinfo.h \
+		D:/Documents/Qt/5.9/mingw53_32/include/QtCore/QCoreApplication \
+		D:/Documents/Qt/5.9/mingw53_32/include/QtCore/qcoreapplication.h \
+		D:/Documents/Qt/5.9/mingw53_32/include/QtCore/qeventloop.h \
 		D:/Documents/Qt/5.9/mingw53_32/include/QtCharts/QtCharts \
 		D:/Documents/Qt/5.9/mingw53_32/include/QtCharts/QtChartsDepends \
 		D:/Documents/Qt/5.9/mingw53_32/include/QtCore/QtCore \
 		D:/Documents/Qt/5.9/mingw53_32/include/QtCore/QtCoreDepends \
 		D:/Documents/Qt/5.9/mingw53_32/include/QtCore/qabstractanimation.h \
 		D:/Documents/Qt/5.9/mingw53_32/include/QtCore/qabstracteventdispatcher.h \
-		D:/Documents/Qt/5.9/mingw53_32/include/QtCore/qeventloop.h \
 		D:/Documents/Qt/5.9/mingw53_32/include/QtCore/qabstractnativeeventfilter.h \
 		D:/Documents/Qt/5.9/mingw53_32/include/QtCore/qabstractproxymodel.h \
 		D:/Documents/Qt/5.9/mingw53_32/include/QtCore/qabstractstate.h \
@@ -1695,7 +1707,6 @@ release/moc_predictdialog.cpp: D:/Documents/Qt/5.9/mingw53_32/include/QtWidgets/
 		D:/Documents/Qt/5.9/mingw53_32/include/QtCore/qcollator.h \
 		D:/Documents/Qt/5.9/mingw53_32/include/QtCore/qcommandlineoption.h \
 		D:/Documents/Qt/5.9/mingw53_32/include/QtCore/qcommandlineparser.h \
-		D:/Documents/Qt/5.9/mingw53_32/include/QtCore/qcoreapplication.h \
 		D:/Documents/Qt/5.9/mingw53_32/include/QtCore/qcryptographichash.h \
 		D:/Documents/Qt/5.9/mingw53_32/include/QtCore/qdatetime.h \
 		D:/Documents/Qt/5.9/mingw53_32/include/QtCore/qdeadlinetimer.h \
@@ -2094,10 +2105,11 @@ release/moc_predictdialog.cpp: D:/Documents/Qt/5.9/mingw53_32/include/QtWidgets/
 		D:/Documents/Qt/5.9/mingw53_32/include/QtCharts/qxylegendmarker.h \
 		D:/Documents/Qt/5.9/mingw53_32/include/QtCharts/qtchartsversion.h \
 		polycurve.h \
+		D:/Documents/Qt/5.9/mingw53_32/include/QtGui/QPixmap \
 		predictdialog.h \
 		release/moc_predefs.h \
 		D:/Documents/Qt/5.9/mingw53_32/bin/moc.exe
-	D:\Documents\Qt\5.9\mingw53_32\bin\moc.exe $(DEFINES) --include release/moc_predefs.h -ID:/Documents/Qt/5.9/mingw53_32/mkspecs/win32-g++ -ID:/1111111111111111111/CSU/0000/system/System -ID:/Documents/Qt/5.9/mingw53_32/include -ID:/Documents/Qt/5.9/mingw53_32/include/QtCharts -ID:/Documents/Qt/5.9/mingw53_32/include/ActiveQt -ID:/Documents/Qt/5.9/mingw53_32/include/QtWidgets -ID:/Documents/Qt/5.9/mingw53_32/include/QtGui -ID:/Documents/Qt/5.9/mingw53_32/include/QtANGLE -ID:/Documents/Qt/5.9/mingw53_32/include/QtCore -ID:/Documents/Qt/Tools/mingw530_32/lib/gcc/i686-w64-mingw32/5.3.0/include -ID:/Documents/Qt/Tools/mingw530_32/lib/gcc/i686-w64-mingw32/5.3.0/include-fixed -ID:/Documents/Qt/Tools/mingw530_32/i686-w64-mingw32/include -ID:/Documents/Qt/Tools/mingw530_32/i686-w64-mingw32/include/c++ -ID:/Documents/Qt/Tools/mingw530_32/i686-w64-mingw32/include/c++/i686-w64-mingw32 -ID:/Documents/Qt/Tools/mingw530_32/i686-w64-mingw32/include/c++/backward predictdialog.h -o release\moc_predictdialog.cpp
+	D:\Documents\Qt\5.9\mingw53_32\bin\moc.exe $(DEFINES) --include release/moc_predefs.h -ID:/Documents/Qt/5.9/mingw53_32/mkspecs/win32-g++ -ID:/1111111111111111111/CSU/0000/system/source -ID:/Documents/Qt/5.9/mingw53_32/include -ID:/Documents/Qt/5.9/mingw53_32/include/QtCharts -ID:/Documents/Qt/5.9/mingw53_32/include/ActiveQt -ID:/Documents/Qt/5.9/mingw53_32/include/QtWidgets -ID:/Documents/Qt/5.9/mingw53_32/include/QtGui -ID:/Documents/Qt/5.9/mingw53_32/include/QtANGLE -ID:/Documents/Qt/5.9/mingw53_32/include/QtCore -ID:/Documents/Qt/Tools/mingw530_32/lib/gcc/i686-w64-mingw32/5.3.0/include -ID:/Documents/Qt/Tools/mingw530_32/lib/gcc/i686-w64-mingw32/5.3.0/include-fixed -ID:/Documents/Qt/Tools/mingw530_32/i686-w64-mingw32/include -ID:/Documents/Qt/Tools/mingw530_32/i686-w64-mingw32/include/c++ -ID:/Documents/Qt/Tools/mingw530_32/i686-w64-mingw32/include/c++/i686-w64-mingw32 -ID:/Documents/Qt/Tools/mingw530_32/i686-w64-mingw32/include/c++/backward predictdialog.h -o release\moc_predictdialog.cpp
 
 compiler_dumpcpp_impl_make_all:
 compiler_dumpcpp_impl_clean:
@@ -2254,10 +2266,14 @@ release/exceldialog.o: exceldialog.cpp exceldialog.h \
 		D:/Documents/Qt/5.9/mingw53_32/include/QtWidgets/qframe.h \
 		D:/Documents/Qt/5.9/mingw53_32/include/QtCore/qabstractitemmodel.h \
 		D:/Documents/Qt/5.9/mingw53_32/include/QtCore/QDebug \
+		D:/Documents/Qt/5.9/mingw53_32/include/QtCore/QString \
 		D:/Documents/Qt/5.9/mingw53_32/include/QtCore/QFile \
 		D:/Documents/Qt/5.9/mingw53_32/include/QtCore/QDir \
 		D:/Documents/Qt/5.9/mingw53_32/include/QtCore/qdir.h \
 		D:/Documents/Qt/5.9/mingw53_32/include/QtCore/qfileinfo.h \
+		D:/Documents/Qt/5.9/mingw53_32/include/QtCore/QCoreApplication \
+		D:/Documents/Qt/5.9/mingw53_32/include/QtCore/qcoreapplication.h \
+		D:/Documents/Qt/5.9/mingw53_32/include/QtCore/qeventloop.h \
 		D:/Documents/Qt/5.9/mingw53_32/include/QtWidgets/QTableWidget \
 		D:/Documents/Qt/5.9/mingw53_32/include/QtWidgets/qtablewidget.h \
 		D:/Documents/Qt/5.9/mingw53_32/include/QtWidgets/qtableview.h \
@@ -2286,8 +2302,6 @@ release/exceldialog.o: exceldialog.cpp exceldialog.h \
 		D:/Documents/Qt/5.9/mingw53_32/include/QtWidgets/QAction \
 		D:/Documents/Qt/5.9/mingw53_32/include/QtWidgets/QApplication \
 		D:/Documents/Qt/5.9/mingw53_32/include/QtWidgets/qapplication.h \
-		D:/Documents/Qt/5.9/mingw53_32/include/QtCore/qcoreapplication.h \
-		D:/Documents/Qt/5.9/mingw53_32/include/QtCore/qeventloop.h \
 		D:/Documents/Qt/5.9/mingw53_32/include/QtWidgets/qdesktopwidget.h \
 		D:/Documents/Qt/5.9/mingw53_32/include/QtGui/qguiapplication.h \
 		D:/Documents/Qt/5.9/mingw53_32/include/QtGui/qinputmethod.h \
@@ -2849,8 +2863,10 @@ release/graphdialog.o: graphdialog.cpp graphdialog.h \
 		D:/Documents/Qt/5.9/mingw53_32/include/QtCharts/qtchartsversion.h \
 		country.h \
 		D:/Documents/Qt/5.9/mingw53_32/include/QtCore/QDebug \
+		D:/Documents/Qt/5.9/mingw53_32/include/QtCore/QString \
 		D:/Documents/Qt/5.9/mingw53_32/include/QtCore/QFile \
 		D:/Documents/Qt/5.9/mingw53_32/include/QtCore/QDir \
+		D:/Documents/Qt/5.9/mingw53_32/include/QtCore/QCoreApplication \
 		ui_graphdialog.h \
 		D:/Documents/Qt/5.9/mingw53_32/include/QtWidgets/QAction \
 		D:/Documents/Qt/5.9/mingw53_32/include/QtWidgets/QApplication \
@@ -2989,10 +3005,14 @@ release/main.o: main.cpp mainwindow.h \
 		country.h \
 		D:/Documents/Qt/5.9/mingw53_32/include/QtWidgets/QComboBox \
 		D:/Documents/Qt/5.9/mingw53_32/include/QtWidgets/qcombobox.h \
+		D:/Documents/Qt/5.9/mingw53_32/include/QtCore/QString \
 		D:/Documents/Qt/5.9/mingw53_32/include/QtCore/QFile \
 		D:/Documents/Qt/5.9/mingw53_32/include/QtCore/QDir \
 		D:/Documents/Qt/5.9/mingw53_32/include/QtCore/qdir.h \
 		D:/Documents/Qt/5.9/mingw53_32/include/QtCore/qfileinfo.h \
+		D:/Documents/Qt/5.9/mingw53_32/include/QtCore/QCoreApplication \
+		D:/Documents/Qt/5.9/mingw53_32/include/QtCore/qcoreapplication.h \
+		D:/Documents/Qt/5.9/mingw53_32/include/QtCore/qeventloop.h \
 		exceldialog.h \
 		D:/Documents/Qt/5.9/mingw53_32/include/QtWidgets/QDialog \
 		D:/Documents/Qt/5.9/mingw53_32/include/QtWidgets/qdialog.h \
@@ -3039,7 +3059,6 @@ release/main.o: main.cpp mainwindow.h \
 		D:/Documents/Qt/5.9/mingw53_32/include/QtCore/QtCoreDepends \
 		D:/Documents/Qt/5.9/mingw53_32/include/QtCore/qabstractanimation.h \
 		D:/Documents/Qt/5.9/mingw53_32/include/QtCore/qabstracteventdispatcher.h \
-		D:/Documents/Qt/5.9/mingw53_32/include/QtCore/qeventloop.h \
 		D:/Documents/Qt/5.9/mingw53_32/include/QtCore/qabstractnativeeventfilter.h \
 		D:/Documents/Qt/5.9/mingw53_32/include/QtCore/qabstractproxymodel.h \
 		D:/Documents/Qt/5.9/mingw53_32/include/QtCore/qabstractstate.h \
@@ -3055,7 +3074,6 @@ release/main.o: main.cpp mainwindow.h \
 		D:/Documents/Qt/5.9/mingw53_32/include/QtCore/qcollator.h \
 		D:/Documents/Qt/5.9/mingw53_32/include/QtCore/qcommandlineoption.h \
 		D:/Documents/Qt/5.9/mingw53_32/include/QtCore/qcommandlineparser.h \
-		D:/Documents/Qt/5.9/mingw53_32/include/QtCore/qcoreapplication.h \
 		D:/Documents/Qt/5.9/mingw53_32/include/QtCore/qcryptographichash.h \
 		D:/Documents/Qt/5.9/mingw53_32/include/QtCore/qdatetime.h \
 		D:/Documents/Qt/5.9/mingw53_32/include/QtCore/qdeadlinetimer.h \
@@ -3425,6 +3443,7 @@ release/main.o: main.cpp mainwindow.h \
 		D:/Documents/Qt/5.9/mingw53_32/include/QtCharts/qtchartsversion.h \
 		predictdialog.h \
 		polycurve.h \
+		D:/Documents/Qt/5.9/mingw53_32/include/QtGui/QPixmap \
 		D:/Documents/Qt/5.9/mingw53_32/include/QtWidgets/QApplication
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o release\main.o main.cpp
 
@@ -3557,10 +3576,14 @@ release/mainwindow.o: mainwindow.cpp mainwindow.h \
 		country.h \
 		D:/Documents/Qt/5.9/mingw53_32/include/QtWidgets/QComboBox \
 		D:/Documents/Qt/5.9/mingw53_32/include/QtWidgets/qcombobox.h \
+		D:/Documents/Qt/5.9/mingw53_32/include/QtCore/QString \
 		D:/Documents/Qt/5.9/mingw53_32/include/QtCore/QFile \
 		D:/Documents/Qt/5.9/mingw53_32/include/QtCore/QDir \
 		D:/Documents/Qt/5.9/mingw53_32/include/QtCore/qdir.h \
 		D:/Documents/Qt/5.9/mingw53_32/include/QtCore/qfileinfo.h \
+		D:/Documents/Qt/5.9/mingw53_32/include/QtCore/QCoreApplication \
+		D:/Documents/Qt/5.9/mingw53_32/include/QtCore/qcoreapplication.h \
+		D:/Documents/Qt/5.9/mingw53_32/include/QtCore/qeventloop.h \
 		exceldialog.h \
 		D:/Documents/Qt/5.9/mingw53_32/include/QtWidgets/QDialog \
 		D:/Documents/Qt/5.9/mingw53_32/include/QtWidgets/qdialog.h \
@@ -3607,7 +3630,6 @@ release/mainwindow.o: mainwindow.cpp mainwindow.h \
 		D:/Documents/Qt/5.9/mingw53_32/include/QtCore/QtCoreDepends \
 		D:/Documents/Qt/5.9/mingw53_32/include/QtCore/qabstractanimation.h \
 		D:/Documents/Qt/5.9/mingw53_32/include/QtCore/qabstracteventdispatcher.h \
-		D:/Documents/Qt/5.9/mingw53_32/include/QtCore/qeventloop.h \
 		D:/Documents/Qt/5.9/mingw53_32/include/QtCore/qabstractnativeeventfilter.h \
 		D:/Documents/Qt/5.9/mingw53_32/include/QtCore/qabstractproxymodel.h \
 		D:/Documents/Qt/5.9/mingw53_32/include/QtCore/qabstractstate.h \
@@ -3623,7 +3645,6 @@ release/mainwindow.o: mainwindow.cpp mainwindow.h \
 		D:/Documents/Qt/5.9/mingw53_32/include/QtCore/qcollator.h \
 		D:/Documents/Qt/5.9/mingw53_32/include/QtCore/qcommandlineoption.h \
 		D:/Documents/Qt/5.9/mingw53_32/include/QtCore/qcommandlineparser.h \
-		D:/Documents/Qt/5.9/mingw53_32/include/QtCore/qcoreapplication.h \
 		D:/Documents/Qt/5.9/mingw53_32/include/QtCore/qcryptographichash.h \
 		D:/Documents/Qt/5.9/mingw53_32/include/QtCore/qdatetime.h \
 		D:/Documents/Qt/5.9/mingw53_32/include/QtCore/qdeadlinetimer.h \
@@ -3993,6 +4014,7 @@ release/mainwindow.o: mainwindow.cpp mainwindow.h \
 		D:/Documents/Qt/5.9/mingw53_32/include/QtCharts/qtchartsversion.h \
 		predictdialog.h \
 		polycurve.h \
+		D:/Documents/Qt/5.9/mingw53_32/include/QtGui/QPixmap \
 		ui_mainwindow.h \
 		D:/Documents/Qt/5.9/mingw53_32/include/QtWidgets/QAction \
 		D:/Documents/Qt/5.9/mingw53_32/include/QtWidgets/QApplication \
@@ -4120,10 +4142,14 @@ release/country.o: country.cpp country.h \
 		D:/Documents/Qt/5.9/mingw53_32/include/QtWidgets/qframe.h \
 		D:/Documents/Qt/5.9/mingw53_32/include/QtCore/qabstractitemmodel.h \
 		D:/Documents/Qt/5.9/mingw53_32/include/QtCore/QDebug \
+		D:/Documents/Qt/5.9/mingw53_32/include/QtCore/QString \
 		D:/Documents/Qt/5.9/mingw53_32/include/QtCore/QFile \
 		D:/Documents/Qt/5.9/mingw53_32/include/QtCore/QDir \
 		D:/Documents/Qt/5.9/mingw53_32/include/QtCore/qdir.h \
-		D:/Documents/Qt/5.9/mingw53_32/include/QtCore/qfileinfo.h
+		D:/Documents/Qt/5.9/mingw53_32/include/QtCore/qfileinfo.h \
+		D:/Documents/Qt/5.9/mingw53_32/include/QtCore/QCoreApplication \
+		D:/Documents/Qt/5.9/mingw53_32/include/QtCore/qcoreapplication.h \
+		D:/Documents/Qt/5.9/mingw53_32/include/QtCore/qeventloop.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o release\country.o country.cpp
 
 release/mycombobox.o: mycombobox.cpp mycombobox.h \
@@ -4383,17 +4409,20 @@ release/predictdialog.o: predictdialog.cpp predictdialog.h \
 		D:/Documents/Qt/5.9/mingw53_32/include/QtWidgets/qframe.h \
 		D:/Documents/Qt/5.9/mingw53_32/include/QtCore/qabstractitemmodel.h \
 		D:/Documents/Qt/5.9/mingw53_32/include/QtCore/QDebug \
+		D:/Documents/Qt/5.9/mingw53_32/include/QtCore/QString \
 		D:/Documents/Qt/5.9/mingw53_32/include/QtCore/QFile \
 		D:/Documents/Qt/5.9/mingw53_32/include/QtCore/QDir \
 		D:/Documents/Qt/5.9/mingw53_32/include/QtCore/qdir.h \
 		D:/Documents/Qt/5.9/mingw53_32/include/QtCore/qfileinfo.h \
+		D:/Documents/Qt/5.9/mingw53_32/include/QtCore/QCoreApplication \
+		D:/Documents/Qt/5.9/mingw53_32/include/QtCore/qcoreapplication.h \
+		D:/Documents/Qt/5.9/mingw53_32/include/QtCore/qeventloop.h \
 		D:/Documents/Qt/5.9/mingw53_32/include/QtCharts/QtCharts \
 		D:/Documents/Qt/5.9/mingw53_32/include/QtCharts/QtChartsDepends \
 		D:/Documents/Qt/5.9/mingw53_32/include/QtCore/QtCore \
 		D:/Documents/Qt/5.9/mingw53_32/include/QtCore/QtCoreDepends \
 		D:/Documents/Qt/5.9/mingw53_32/include/QtCore/qabstractanimation.h \
 		D:/Documents/Qt/5.9/mingw53_32/include/QtCore/qabstracteventdispatcher.h \
-		D:/Documents/Qt/5.9/mingw53_32/include/QtCore/qeventloop.h \
 		D:/Documents/Qt/5.9/mingw53_32/include/QtCore/qabstractnativeeventfilter.h \
 		D:/Documents/Qt/5.9/mingw53_32/include/QtCore/qabstractproxymodel.h \
 		D:/Documents/Qt/5.9/mingw53_32/include/QtCore/qabstractstate.h \
@@ -4409,7 +4438,6 @@ release/predictdialog.o: predictdialog.cpp predictdialog.h \
 		D:/Documents/Qt/5.9/mingw53_32/include/QtCore/qcollator.h \
 		D:/Documents/Qt/5.9/mingw53_32/include/QtCore/qcommandlineoption.h \
 		D:/Documents/Qt/5.9/mingw53_32/include/QtCore/qcommandlineparser.h \
-		D:/Documents/Qt/5.9/mingw53_32/include/QtCore/qcoreapplication.h \
 		D:/Documents/Qt/5.9/mingw53_32/include/QtCore/qcryptographichash.h \
 		D:/Documents/Qt/5.9/mingw53_32/include/QtCore/qdatetime.h \
 		D:/Documents/Qt/5.9/mingw53_32/include/QtCore/qdeadlinetimer.h \
@@ -4808,6 +4836,7 @@ release/predictdialog.o: predictdialog.cpp predictdialog.h \
 		D:/Documents/Qt/5.9/mingw53_32/include/QtCharts/qxylegendmarker.h \
 		D:/Documents/Qt/5.9/mingw53_32/include/QtCharts/qtchartsversion.h \
 		polycurve.h \
+		D:/Documents/Qt/5.9/mingw53_32/include/QtGui/QPixmap \
 		ui_predictdialog.h \
 		D:/Documents/Qt/5.9/mingw53_32/include/QtWidgets/QAction \
 		D:/Documents/Qt/5.9/mingw53_32/include/QtWidgets/QApplication \

@@ -6,6 +6,7 @@
 #include <QtCharts>
 #include <cmath>
 #include "polycurve.h"
+#include <QPixmap>
 
 namespace Ui {
 class PredictDialog;

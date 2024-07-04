@@ -32,8 +32,8 @@ void GraphDialog::build(){
     font.setFamily("HarmonyOS Sans");
 
     QStringList list=ui->MSCB->CheckText();
-    QChart *chart = new QChart();
-    QBarSeries *cset=new QBarSeries();
+    QChart *chart = new QChart;
+    QBarSeries *cset=new QBarSeries;
     int col=ui->comboBox->currentIndex();
 
     int MAXY=0;
@@ -43,7 +43,7 @@ void GraphDialog::build(){
         QBarSet *data=new QBarSet(*it);
 
         Country *st=new Country;
-        st->read(*it);
+        st->read(Country::cindex[*it]);
 
         for(int i=1;i<=6;i++){
             int res=st->calc_month(i,col);
@@ -83,8 +83,8 @@ void GraphDialog::build(){
     QStringList categories;
     categories << "Jan" << "Feb" << "Mar" << "Apr" << "May" << "Jun";
 
-    QBarCategoryAxis *axis = new QBarCategoryAxis();
-    QValueAxis *yxis=new QValueAxis();
+    QBarCategoryAxis *axis = new QBarCategoryAxis;
+    QValueAxis *yxis=new QValueAxis;
 
     axis->append(categories);
     yxis->setRange(0,ceil(MAXY*1.5/1000)*1000);
@@ -136,7 +136,6 @@ void GraphDialog::screenshot(){
 
     QDialog *as=new QDialog;
     QVBoxLayout *vbox = new QVBoxLayout(this);
-//    vbox->addWidget(new QLabel("图片已保存至D:\\1111111111111111111\\CSU\\0000\\system\\System\\png\\"+name));
     QString *text=new QString("图片已保存至");
     text->append(QString::fromStdString(Country::PATH));
     text->append("\\png\\");
